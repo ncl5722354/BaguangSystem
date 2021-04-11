@@ -60,10 +60,56 @@
         
         <asp:Image ID="Image1" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/login_over.png" BorderColor="#FF6600" />
         <asp:TextBox ID="TextBox_username" runat="server" CssClass="auto-style7" Font-Names="黑体" Font-Size="20pt"></asp:TextBox>
-        <asp:TextBox ID="TextBox_password" runat="server" CssClass="auto-style8" Font-Names="黑体" Font-Size="20pt"></asp:TextBox>
-        <asp:Button ID="Button_ok" runat="server" CssClass="auto-style9" Text="登录" Font-Names="微软雅黑" Font-Size="12pt" OnClick="Button_ok_Click" BackColor="#009900" ForeColor="White"/>
+        <asp:TextBox ID="TextBox_password" runat="server" CssClass="auto-style8" Font-Names="黑体" Font-Size="20pt" TextMode="Password"></asp:TextBox>
+        <input type="button" id="btn_ok" class="auto-style9" value="登录" runat="server"/>
         <asp:Label ID="Label_error" runat="server" CssClass="auto-style10" style="z-index: 1" Text="用户名或密码错误" ForeColor="#990000"></asp:Label>
     </div>
     </form>
 </body>
+    
 </html>
+<script type="text/javascript">
+    var btn_ok = document.getElementById("btn_ok");
+    btn_ok.onclick=function(event)
+    {
+
+        var txt_username = document.getElementById("TextBox_username").value;
+        var txt_password = document.getElementById("TextBox_password").value;
+       
+       
+
+       // alert("username:" + txt_username + " password:" + txt_password);
+
+        if (txt_username == 'admin' && txt_password == 'admin') {
+            setCookie('userName', txt_username, 7);
+            setCookie('password', txt_password, 7);
+            window.open('MainMap.aspx', "_self");
+        }
+
+        if (txt_username == 'admin' && txt_password == 'adminadmin') {
+            setCookie('userName', txt_username, 7);
+            setCookie('password', txt_password, 7);
+            window.open('MainMap.aspx', "_self");
+        }
+    }
+   
+
+    function click(event)
+    {
+       
+
+    }
+
+    var setCookie = function (name, value, day) {
+        //当设置的时间等于0时，不设置expires属性，cookie在浏览器关闭后删除
+        var expires = day * 24 * 60 * 60 * 1000;
+        var exp = new Date();
+        exp.setTime(exp.getTime() + expires);
+        document.cookie = name + "=" + value + ";expires=" + exp.toUTCString();
+    };
+    //删除cookie
+    var delCookie = function (name) {
+        setCookie(name, ' ', -1);
+    };
+
+</script>

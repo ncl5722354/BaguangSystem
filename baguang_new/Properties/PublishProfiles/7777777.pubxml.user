@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\89711\Desktop\发布</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Baobiaotongji.aspx">
+      <publishTime>03/26/2021 16:41:51</publishTime>
+    </File>
+    <File Include="bin/baguang_new.dll">
+      <publishTime>04/02/2021 15:07:57</publishTime>
+    </File>
+    <File Include="bin/FileOperation.dll">
+      <publishTime>04/02/2021 15:07:57</publishTime>
+    </File>
+    <File Include="bin/SqlConnect.dll">
+      <publishTime>04/01/2021 09:40:31</publishTime>
+    </File>
+    <File Include="bin/String_Caozuo.dll">
+      <publishTime>04/01/2021 09:40:31</publishTime>
+    </File>
+    <File Include="chart/bower.json">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="chart/composer.json">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="chart/dist/Chart.bundle.js">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="chart/dist/Chart.bundle.min.js">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="chart/dist/Chart.css">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="chart/dist/Chart.js">
+      <publishTime>04/01/2021 18:01:38</publishTime>
+    </File>
+    <File Include="chart/dist/Chart.min.css">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="chart/dist/Chart.min.js">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="chart/LICENSE.md">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="chart/package.json">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="chart/README.md">
+      <publishTime>06/03/2020 13:00:28</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/23/2021 15:24:41</publishTime>
+    </File>
+    <File Include="image/1.png">
+      <publishTime>05/30/2020 23:01:40</publishTime>
+    </File>
+    <File Include="image/2.png">
+      <publishTime>06/02/2020 11:31:01</publishTime>
+    </File>
+    <File Include="image/3.png">
+      <publishTime>06/02/2020 23:40:41</publishTime>
+    </File>
+    <File Include="image/bg.png">
+      <publishTime>06/24/2020 11:18:12</publishTime>
+    </File>
+    <File Include="image/down.png">
+      <publishTime>06/01/2020 16:46:19</publishTime>
+    </File>
+    <File Include="image/login_over - 复制.png">
+      <publishTime>06/24/2020 10:10:17</publishTime>
+    </File>
+    <File Include="image/login_over.png">
+      <publishTime>06/23/2020 17:14:58</publishTime>
+    </File>
+    <File Include="image/login_over3.png">
+      <publishTime>06/29/2020 08:56:00</publishTime>
+    </File>
+    <File Include="image/LOGO.png">
+      <publishTime>05/27/2020 16:35:44</publishTime>
+    </File>
+    <File Include="image/p1.png">
+      <publishTime>05/28/2020 02:23:31</publishTime>
+    </File>
+    <File Include="image/position.png">
+      <publishTime>05/28/2020 08:43:47</publishTime>
+    </File>
+    <File Include="image/Sound_off.png">
+      <publishTime>06/16/2020 12:13:41</publishTime>
+    </File>
+    <File Include="image/Sound_on.png">
+      <publishTime>06/16/2020 12:13:41</publishTime>
+    </File>
+    <File Include="image/title_bg.png">
+      <publishTime>05/22/2020 11:29:33</publishTime>
+    </File>
+    <File Include="image/up.png">
+      <publishTime>06/01/2020 17:44:07</publishTime>
+    </File>
+    <File Include="image/主页.png">
+      <publishTime>05/22/2020 14:09:54</publishTime>
+    </File>
+    <File Include="image/地图.png">
+      <publishTime>05/27/2020 14:54:09</publishTime>
+    </File>
+    <File Include="image/坝光收费站边坡健康监测系统-文字效果.png">
+      <publishTime>05/22/2020 11:34:22</publishTime>
+    </File>
+    <File Include="image/报表.png">
+      <publishTime>05/22/2020 15:20:42</publishTime>
+    </File>
+    <File Include="image/查询.png">
+      <publishTime>05/22/2020 17:58:02</publishTime>
+    </File>
+    <File Include="image/设置.png">
+      <publishTime>06/15/2020 22:18:52</publishTime>
+    </File>
+    <File Include="jsgrid/.editorconfig">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/.gitignore">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/.npmignore">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/.travis.yml">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/bower.json">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/css/icons-2x.png">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/css/icons.png">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/css/jsgrid.css">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/css/theme.css">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/basic.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/batch-delete.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/custom-grid-field.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/custom-load-indicator.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/custom-row-renderer.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/custom-view.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/data-manipulation.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/db.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/demos.css">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/external-pager.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/index.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/loading-by-page.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/localization.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/odata-service.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/rows-reordering.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/sorting.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/static-data.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/demos/validation.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/dist/jsgrid-theme.css">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/dist/jsgrid-theme.min.css">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/dist/jsgrid.css">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/dist/jsgrid.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/dist/jsgrid.min.css">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/dist/jsgrid.min.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/external/jquery/jquery-1.8.3.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/external/qunit/qunit-1.10.0.css">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/external/qunit/qunit-1.10.0.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/Gruntfile.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/LICENSE">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/package.json">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/README.md">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/fields/jsgrid.field.checkbox.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/fields/jsgrid.field.control.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/fields/jsgrid.field.number.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/fields/jsgrid.field.select.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/fields/jsgrid.field.text.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/fields/jsgrid.field.textarea.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/de.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/es.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/fr.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/he.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/ja.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/ka.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/pl.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/pt-br.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/pt.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/ru.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/tr.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/zh-cn.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/i18n/zh-tw.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/jsgrid.core.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/jsgrid.field.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/jsgrid.load-indicator.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/jsgrid.load-strategies.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/jsgrid.sort-strategies.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/src/jsgrid.validation.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/tests/index.html">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/tests/jsgrid.field.tests.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/tests/jsgrid.sort-strategies.tests.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/tests/jsgrid.tests.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="jsgrid/tests/jsgrid.validation.tests.js">
+      <publishTime>05/28/2020 09:38:29</publishTime>
+    </File>
+    <File Include="Login_View.aspx">
+      <publishTime>06/29/2020 08:57:05</publishTime>
+    </File>
+    <File Include="MainView.aspx">
+      <publishTime>04/06/2021 21:31:21</publishTime>
+    </File>
+    <File Include="mywebserver.asmx">
+      <publishTime>06/01/2020 23:45:50</publishTime>
+    </File>
+    <File Include="pic/left1.png">
+      <publishTime>03/23/2021 22:08:49</publishTime>
+    </File>
+    <File Include="pic/right1.png">
+      <publishTime>03/23/2021 22:11:56</publishTime>
+    </File>
+    <File Include="pic/按钮_信息表格.png">
+      <publishTime>02/08/2021 14:19:45</publishTime>
+    </File>
+    <File Include="pic/按钮_实时数据.png">
+      <publishTime>02/02/2021 16:07:32</publishTime>
+    </File>
+    <File Include="pic/按钮_实时曲线.png">
+      <publishTime>02/02/2021 16:28:21</publishTime>
+    </File>
+    <File Include="pic/按钮_电力监测1.png">
+      <publishTime>02/05/2021 15:31:11</publishTime>
+    </File>
+    <File Include="pic/标题.png">
+      <publishTime>02/03/2021 10:13:42</publishTime>
+    </File>
+    <File Include="pic/背景.png">
+      <publishTime>02/03/2021 10:21:05</publishTime>
+    </File>
+    <File Include="Show_bianhua_yuefen.aspx">
+      <publishTime>04/02/2021 11:59:45</publishTime>
+    </File>
+    <File Include="sound/1号坡道区域.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/1号坡道区域.wav">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/1测.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/1测.wav">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/2号坡道区域.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/2号坡道区域.wav">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/2坡中.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/2坡中.wav">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/2坡顶.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/2坡顶.wav">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/2测.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/2测.wav">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/3号坡道区域.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/3号坡道区域.wav">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/3坡.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/3坡.wav">
+      <publishTime>06/03/2020 11:20:03</publishTime>
+    </File>
+    <File Include="sound/3测.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/3测.wav">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/4测.ogg">
+      <publishTime>06/03/2020 11:20:02</publishTime>
+    </File>
+    <File Include="sound/4测.wav">
+      <publishTime>06/03/2020 11:20:03</publishTime>
+    </File>
+    <File Include="submap1.aspx">
+      <publishTime>04/05/2021 00:04:40</publishTime>
+    </File>
+    <File Include="submap2.aspx">
+      <publishTime>03/26/2021 16:42:10</publishTime>
+    </File>
+    <File Include="submap3.aspx">
+      <publishTime>04/01/2021 21:56:23</publishTime>
+    </File>
+    <File Include="userpassword.aspx">
+      <publishTime>03/26/2021 16:28:33</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/08/2021 21:49:11</publishTime>
+    </File>
+    <File Include="zhizhuangaspx.aspx">
+      <publishTime>03/26/2021 16:42:25</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

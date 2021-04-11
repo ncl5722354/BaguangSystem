@@ -9,17 +9,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <style type="text/css">
-        
+        .line {
+            position: absolute;
+            z-index: 2;
+            width: 2px;
+            height: 2px;
+            font-size: 1px;
+            background-color: #0000FF;
+            overflow: hidden;
+        }
         .auto-style1 {
             height: 100%;
         }
         .auto-style2 {
             position: absolute;
-            top: 5%;
+            top: 6%;
             left: 30%;
-            z-index: 1;
-            width: 320px;
-            height: 25px;
+           
+            z-index: 6;
         }
         .auto-style3 {
             position: absolute;
@@ -28,6 +35,16 @@
             z-index: 1;
             width: 20%;
             height: 80px;
+        }
+
+        .Image_title_name
+        {
+             position: absolute;
+            top: 1%;
+            left: 12%;
+            z-index: 6;
+            width: 30%;
+            height: 7%;
         }
         .auto-style4 {
             position: absolute;
@@ -343,7 +360,7 @@
             height: 80px;
         }
         .auto-style43 {
-            width: 100%;
+            width: 99%;
             left:0px;
             height:99%;
         }
@@ -445,15 +462,6 @@
             right: 104px;
         }
         
-        .auto-style61 {
-            position: absolute;
-            top: 35%;
-            left: 45%;
-            z-index: 1;
-            width: 121px;
-            height: 200px;
-        }
-        
         .auto-style62 {
             position: absolute;
             top: 30%;
@@ -501,7 +509,7 @@
         }
         .auto-style67 {
             position: absolute;
-            top: 0px;
+            top: 1px;
             left: 0px;
             width: 100%;
             height:99%;
@@ -645,21 +653,13 @@
             height: 35px;
            
         }
-             .auto-style82 {
-            position: absolute;
-            top: 35%;
-            left: 60%;
-            z-index: 1;
-            width: 121px;
-            height: 200px;
-        }
               .auto-style83 {
             position: absolute;
             top: 11%;
-            left: 20%;
+            left: 1%;
             z-index: 1;
-            width: 60%;
-            height: 60%;
+            width: 78%;
+            height: 88%;
         }
                .auto-style84 {
             position: absolute;
@@ -667,15 +667,15 @@
             left: 0%;
             z-index: 4;
             width: 100%;
-            height: 5%;
+            height: 11%;
         }
              .auto-style85 {
             position: absolute;
             top: 0px;
             left: 20px;
-            width: 3%;
+            width: 6%;
             z-index: 5;
-            height:5%;
+            height:10%;
         }
 
              .auto-style87 {
@@ -720,7 +720,7 @@
         }
          .auto-style92 {
             position: absolute;
-            top: 60%;
+            top: -2147483648%;
             left: 71%;
             width: 28%;
             z-index: 6;
@@ -894,7 +894,7 @@
             left: 81%;
             width: 19%;
             z-index: 7;
-            height: 50%;
+            height: 88%;
         }
             .Panel_bingzhuangtu {
             position: absolute;
@@ -914,11 +914,11 @@
         }
             .Panel_mapinfo {
             position: absolute;
-            top: 15%;
-            left: 21%;
-            width: 50%;
+            top: 6%;
+            left: 70%;
+            width: 30%;
             z-index: 7;
-            height: 10%;
+            height: 4%;
             border-radius:3%;
             opacity:0.8;
         }
@@ -1004,16 +1004,7 @@
             height:20px;
             z-index:6;
         }
-         .Panel_mapinfo {
-            position: absolute;
-            top: 15%;
-            left: 21%;
-            width: 50%;
-            z-index: 7;
-            height: 10%;
-            border-radius:3%;
-            opacity:0.8;
-        }
+        
             .biaozhi1 {
             position: absolute;
             top: 17%;
@@ -1175,7 +1166,7 @@
             left: 81%;
             width: 19%;
             z-index: 7;
-            height: 50%;
+            height: 88%;
         }
 
         .shebeizhuangtai_table_panel
@@ -1217,72 +1208,383 @@
             z-index:10;
             height:4%;
         }
+          .DropDownList1 {
+            position: absolute;
+            top: 1%;
+            left: 5%;
+            width: 5%;
+            z-index: 6;
+            height:5%;
+        }
+
+          .info1 {
+            position: absolute;
+            top: 0%;
+            left: 20%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info2 {
+            position: absolute;
+            top: 0%;
+            left: 24%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info3 {
+            position: absolute;
+            top: 0%;
+            left: 28%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info4 {
+            position: absolute;
+            top: 0%;
+            left: 32%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info5 {
+            position: absolute;
+            top: 0%;
+            left: 36%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info6 {
+            position: absolute;
+            top: 0%;
+            left: 40%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info7 {
+            position: absolute;
+            top: 0%;
+            left: 44%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info8 {
+            position: absolute;
+            top: 0%;
+            left: 48%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info9 {
+            position: absolute;
+            top: 0%;
+            left: 52%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info10 {
+            position: absolute;
+            top: 0%;
+            left: 56%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info11 {
+            position: absolute;
+            top: 0%;
+            left: 60%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info12 {
+            position: absolute;
+            top: 0%;
+            left: 64%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info13 {
+            position: absolute;
+            top: 0%;
+            left: 68%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info14 {
+            position: absolute;
+            top: 0%;
+            left: 72%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info15 {
+            position: absolute;
+            top: 0%;
+            left: 76%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .info16 {
+            position: absolute;
+            top: 0%;
+            left: 80%;
+            width: 4%;
+            z-index: 9;
+            height: 100%;
+            text-align: center;
+        }
+        .label_min
+        {
+            position: absolute;
+            top: 30%;
+            left: 5%;
+            width: 15%;
+            z-index: 9;
+            height: 70%;
+            text-align: center;
+        }
+        .label_max
+        {
+            position: absolute;
+            top: 29%;
+            left: 84%;
+            width: 15%;
+            z-index: 9;
+            height: 70%;
+            text-align: center;
+        }
+         .ImageButton_zhuye
+        {
+            position: absolute;
+            top: 1%;
+            left: 50%;
+            width: 3%;
+            z-index: 9;
+            height: 5%;
+        }
+        .ImageButton_baobiao
+        {
+            position: absolute;
+            top: 1%;
+            left: 55%;
+            width: 3%;
+            z-index: 9;
+            height: 5%;
+        }
+        .ImageButton_chaxun
+        {
+            position: absolute;
+            top: 1%;
+            left: 60%;
+            width: 3%;
+            z-index: 9;
+            height: 5%;
+        }
+        .Label_zhuye{
+            position: absolute;
+            top: 6%;
+            left: 50%;
+            width: 5%;
+            z-index: 9;
+            height: 5%;
+        }
+         .Label_baobiao{
+            position: absolute;
+            top: 6%;
+            left: 55%;
+            width: 5%;
+            z-index: 9;
+            height: 5%;
+        }
+         .Label_chaxun{
+             position: absolute;
+            top: 6%;
+            left: 60%;
+            width: 5%;
+            z-index: 9;
+            height: 5%;
+         }
+        .auto-style98 {
+            position: absolute;
+            top: -2147483648%;
+            left: 60%;
+            width: 3%;
+            z-index: 9;
+            height: 22px;
+        }
+       .biaochititle
+       {
+            position:absolute;
+            left:10%;
+            width:20%;
+            height:30px;
+            z-index:10;
+            top:150px;
+       }
+        .panel_biaochi{
+            position:absolute;
+            left:60%;
+            width:20%;
+            height:3500px;
+            z-index:10;
+            top:180px;
+        }
+        .MyChart{
+             position: absolute;
+            top: 10%;
+            left: 25%;
+            z-index: 14;
+            width: 50%;
+            height: 50%;
+
+         }
+
+         .canvas1
+         {
+             position: absolute;
+            top: 0%;
+            left: 0%;
+            z-index: 14;
+            width: 100%;
+            height: 100%;
+            
+         }
+         .canvas2
+         {
+             position: absolute;
+            top: 0%;
+            left: 0%;
+            z-index: 13;
+            width: 100%;
+            height: 100%;
+            
+         }
+         .closelabel{
+             position:absolute;
+             top:10%;
+             left:65%;
+             z-index:15;
+             width:10%;
+             height:5%;
+             visibility:visible;
+            
+         }
+         .closelabel_hiden{
+             position:absolute;
+             top:10%;
+             left:65%;
+             z-index:15;
+             width:10%;
+             height:3%;
+            visibility:hidden;
+         }
+
+         
+         
+             .fuwei{
+             position:absolute;
+             top:10%;
+             left:41%;
+             z-index:15;
+             width:3%;
+             height:2%;
+             visibility:hidden;
+         
+         }
+
+          .qianjin{
+             position:absolute;
+             top:10%;
+             left:29%;
+             z-index:15;
+             width:4%;
+             height:2%;
+             visibility:hidden;
+         }
+         .qianjin10
+         {
+             position:absolute;
+             top:10%;
+             left:37%;
+             z-index:15;
+             width:4%;
+             height:2%;
+             visibility:hidden;
+         }
+         .houtui{
+             position:absolute;
+             top:10%;
+             left:25%;
+             z-index:15;
+             width:4%;
+             height:2%;
+             visibility:hidden;
+         }
+         .houtui10
+         {
+             position:absolute;
+             top:10%;
+             left:33%;
+             z-index:15;
+             width:4%;
+             height:2%;
+             visibility:hidden;
+         }
         </style>
 </head>
 <body  id="body1"  style="height: 100%; margin-right: 0px;">
     <form id="form1" runat="server" class="auto-style43">
     <div id="div1" class="auto-style1">
  
-         <asp:Image ID="Image_icon" CssClass="auto-style85" runat="server"  ImageUrl="~/Resource/图片2.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
+         <asp:Image ID="Image_icon" CssClass="auto-style85" runat="server"  ImageUrl="~/Resource/LOGO.png"  />
+       <input id="btn_close" class="closelabel_hiden" type="button" aria-expanded="false" aria-grabbed="false" value="关闭"/>
+        <input id="btn_qianjin" class="qianjin" type="button" value="前进" />
+        <input id="btn_houtui"  class="houtui" type="button" value="后退"/>
+        <input  id="btn_fuwei" class="fuwei" type="button" value="复位"/>
+        <input id="btn_qianjin10" class="qianjin10" type="button" value="前进10天"/>
+        <input id="btn_houtui10" class="houtui10" type="button" value="后退10天"/> 
 
-         <asp:Panel ID="Panel2" CssClass="auto-style83" runat="server" ScrollBars="Vertical" BorderColor="Black" BackColor="#66CCFF" BorderStyle="Solid" BorderWidth="4px">
-         <asp:Image ID="Image1" runat="server" CssClass="auto-style3" ImageUrl="~/Resource/zhu_tou.png" />
-    
-        <asp:Image ID="Image2" runat="server" CssClass="auto-style4" ImageUrl="~/Resource/zhu_shen.png" />
-    
-        <asp:Image ID="Image3" runat="server" CssClass="auto-style5" ImageUrl="~/Resource/zhu_shen.png" />
-    
-        <asp:Image ID="Image4" runat="server" CssClass="auto-style6" ImageUrl="~/Resource/zhu_shen.png" />
-    
-        <asp:Image ID="Image5" runat="server" CssClass="auto-style7" ImageUrl="~/Resource/zhu_shen.png" />
-    
-        <asp:Image ID="Image6" runat="server" CssClass="auto-style8" ImageUrl="~/Resource/zhu_shen.png" />
-    
-        <asp:Image ID="Image7" runat="server" CssClass="auto-style9" ImageUrl="~/Resource/zhu_shen.png" />
-    
-        <asp:Image ID="Image8" runat="server" CssClass="auto-style10" ImageUrl="~/Resource/zhu_shen.png" />
-    
-        <asp:Image ID="Image9" runat="server" CssClass="auto-style11" ImageUrl="~/Resource/zhu_shen.png" />
-    
-        <asp:Image ID="Image10" runat="server" CssClass="auto-style12" ImageUrl="~/Resource/zhu_shen.png" />
-    
-        <asp:Image ID="Image11" runat="server" CssClass="auto-style13" ImageUrl="~/Resource/zhu_shen.png" />
 
+        <asp:Panel ID="Panel2" CssClass="auto-style83" runat="server" ScrollBars="Vertical" BorderColor="Black" BackColor="#66CCFF" BorderStyle="Solid" BorderWidth="4px">
         
-         <asp:Image ID="Image12" runat="server" CssClass="auto-style14" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image13" runat="server" CssClass="auto-style15" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image14" runat="server" CssClass="auto-style16" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image15" runat="server" CssClass="auto-style17" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image16" runat="server" CssClass="auto-style18" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image17" runat="server" CssClass="auto-style19" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image18" runat="server" CssClass="auto-style20" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image19" runat="server" CssClass="auto-style21" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image20" runat="server" CssClass="auto-style22" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image21" runat="server" CssClass="auto-style23" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image22" runat="server" CssClass="auto-style24" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image23" runat="server" CssClass="auto-style25" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image24" runat="server" CssClass="auto-style26" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image25" runat="server" CssClass="auto-style27" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image26" runat="server" CssClass="auto-style28" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image27" runat="server" CssClass="auto-style29" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image28" runat="server" CssClass="auto-style30" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image29" runat="server" CssClass="auto-style31" ImageUrl="~/Resource/zhu_shen.png" />
-         <asp:Image ID="Image30" runat="server" CssClass="auto-style32" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image31" runat="server" CssClass="auto-style33" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image32" runat="server" CssClass="auto-style34" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image33" runat="server" CssClass="auto-style35" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image34" runat="server" CssClass="auto-style36" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image35" runat="server" CssClass="auto-style37" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image36" runat="server" CssClass="auto-style38" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image37" runat="server" CssClass="auto-style39" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image38" runat="server" CssClass="auto-style40" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image39" runat="server" CssClass="auto-style41" ImageUrl="~/Resource/zhu_shen.png" />
-        <asp:Image ID="Image40" runat="server" CssClass="auto-style42" ImageUrl="~/Resource/zhu_di.png" />
+        <!--标尺-->
+        <asp:Label ID="biaochititle" runat="server" CssClass="biaochititle" Text="测斜管深度标尺"></asp:Label>
+        <asp:Panel ID="panelbiaochi" runat="server" CssClass="panel_biaochi" BackColor="Yellow"></asp:Panel>
+        
          </asp:Panel>
         <asp:Label ID="Label_weizhi" CssClass="auto-style93" runat="server" Text="位置" Font-Names="微软雅黑" Visible="false"></asp:Label>
         <asp:Label ID="Label_weiyiliang" CssClass="auto-style94" runat="server" Text="位移量" Font-Names="微软雅黑" Visible="false"></asp:Label>
        
-         <asp:Image ID="Image41" runat="server" CssClass="auto-style84" BackColor="#0000CC" ImageUrl="~/Resource/图片1.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3" />
+        <asp:Image ID="Image_title_name" CssClass="Image_title_name" runat="server" ImageUrl="~/Resource/坝光收费站边坡健康监测系统-文字效果.png" />
+         <asp:Image ID="Image41" runat="server" CssClass="auto-style84" BackColor="#0000CC" ImageUrl="~/Resource/上侧背景条1.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3" />
          <asp:Image ID="Image43" CssClass="auto-style90"  runat="server" ImageUrl="~/Resource/图片4.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" Visible="false"/>
         <asp:label  ID="label_baojing" runat="server" text="报警显示" CssClass="auto-style91" Font-Size="XX-Large" ForeColor="White" Visible="false"></asp:label>
         <asp:Image ID="Image44" CssClass="auto-style92" runat="server" ImageUrl="~/Resource/dise.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" Visible="false" />
@@ -1294,12 +1596,17 @@
  
          <asp:Image ID="Image_bg" CssClass="auto-style67" runat="server" BackColor="#0099CC"   />
     
-        <asp:Label ID="Label_title" runat="server" CssClass="auto-style2" Font-Names="黑体" Font-Size="20pt" Text="柱状图"></asp:Label>
+        <asp:Label ID="Label_title" runat="server" CssClass="auto-style2" Font-Names="黑体" Font-Size="20pt" Text="测斜管" BackColor="Red"></asp:Label>
     
         <asp:ImageButton ID="ImageButton_set" CssClass="auto-style96" runat="server" ImageUrl="~/Resource/settings_64px_1229386_easyicon.net.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" BackColor="#3366FF" OnClick="ImageButton_set_Click" Visible="false"/>
 
     
-
+        <div id="chart_wrapper" class="MyChart" runat="server" style="display:none">
+          <asp:Panel ID="panel3" CssClass="canvas2" BackColor="White" runat="server"></asp:Panel>
+           <canvas id="myChart" class="canvas1" runat="server"></canvas>
+            
+           
+       </div>
         
 
         <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44" Visible="False" BackColor="Transparent">
@@ -1345,16 +1652,12 @@
         
         <asp:Button ID="Button3" runat="server" BorderStyle="Solid" CssClass="auto-style60" Text="缩小" OnClick="Button3_Click" Visible="False" />
         
-        <asp:ListBox ID="ListBox3" runat="server" CssClass="auto-style61" AutoPostBack="True" OnSelectedIndexChanged="ListBox3_SelectedIndexChanged" BackColor="#9999FF" Visible="false"></asp:ListBox>
-        
         <asp:Label ID="Label12" runat="server" CssClass="auto-style62" Text="选择日期" Font-Names="微软雅黑" Font-Size="20pt" Visible="False" ></asp:Label>
         
         <asp:Button ID="Button4" runat="server" BorderStyle="Solid" CssClass="auto-style63" Text="前进" OnClick="Button4_Click" Visible="False" />
         
         <asp:Button ID="Button5" runat="server" CssClass="auto-style64" style="z-index: 1" Text="后退" BorderStyle="Solid" OnClick="Button5_Click" Visible="False" />
         
-        <asp:ListBox ID="ListBox4" runat="server" CssClass="auto-style82" AutoPostBack="True" OnSelectedIndexChanged="ListBox4_SelectedIndexChanged" BackColor="#9999FF" Visible="false"></asp:ListBox>
-    
        <asp:Label ID="Label2" runat="server" CssClass="auto-style81" Text="选择时间" ForeColor="White" Visible="false"></asp:Label>
     
        <asp:Image ID="Image42" CssClass="auto-style88" runat="server" ImageUrl="~/Resource/图片4.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" Visible="false"/>
@@ -1385,11 +1688,11 @@
                 <ContentTemplate>  
             <!--Lable和Timer控件必须都包含在UpdatePanel控件中 -->  
                     <asp:Label ID="Label_timer" CssClass="auto-style87" runat="server" Text="Label" Font-Names="微软雅黑" ForeColor="White" Font-Size="Large"></asp:Label>  <!--用于显示时间-->  
-                    <asp:Label ID="Label_baojingshuoming1" CssClass="Label_baojingshuoming1" runat="server" Text="总体说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
+                    <asp:Label ID="Label_baojingshuoming1" CssClass="Label_baojingshuoming1" runat="server" Text="总体说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Visible="false"></asp:Label>
                     
                     <asp:Timer ID="Timer1" runat="server" Interval="1000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->  
                     <!--饼状图-->
-        <asp:Panel ID="Panel_bingzhuangtu" CssClass="Panel_bingzhuangtu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
+        <asp:Panel ID="Panel_bingzhuangtu" CssClass="Panel_bingzhuangtu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61" Visible="false">
             <asp:Label ID="Label_baojingshuoming" CssClass="Label_dangqiantongji" runat="server" Text="报警说明" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
         </asp:Panel>
                     
@@ -1415,7 +1718,7 @@
         </asp:Chart>
       </asp:Panel>
 
-            <asp:Panel ID="Panel_shuliangtongji" CssClass="panel_shuliangtongji" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61" >
+            <asp:Panel ID="Panel_shuliangtongji" CssClass="panel_shuliangtongji" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61" Visible="false">
             <asp:Label ID="Label_danqiantongji" CssClass="Label_dangqiantongji" runat="server" Text="当前统计" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
             <asp:Label ID="Label_shuoming" CssClass="Label_shuoming" runat="server" Text="全局各个位移数量占比" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="10pt"></asp:Label>
             <asp:Label ID="Label_label1" CssClass="Label_label1" runat="server" Text="小于0.01mm" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
@@ -1435,7 +1738,7 @@
             <asp:Label ID="Label_baifenbi3" CssClass="Label_baifenbi3" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
             <asp:Label ID="Label_baifenbi4" CssClass="Label_baifenbi4" runat="server" Text="0%" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Font-Size="7pt"></asp:Label>
         </asp:Panel>
-                    <asp:Panel ID="Panel_baojing_info" CssClass="Panel_baojing_info" runat="server" ScrollBars="Vertical" >
+                    <asp:Panel ID="Panel_baojing_info" CssClass="Panel_baojing_info" runat="server" ScrollBars="Vertical" Visible="false" >
                         </asp:Panel> 
 
                     <asp:Timer ID="Timer2" runat="server" Interval="5000"></asp:Timer><!-- 用于更新时间，每1秒更新一次-->
@@ -1454,7 +1757,7 @@
         <!-- 鼠标点到点上 -->
     
         <!--新界面信息-->
-       <asp:Menu ID="Menu1" CssClass="Menu1"  runat="server" BackColor="#000099" ForeColor="#33CCCC" Font-Names="微软雅黑" Orientation="Horizontal" BorderColor="Black" BorderStyle="Solid">
+       <asp:Menu ID="Menu1" CssClass="Menu1"  runat="server" BackColor="#000099" ForeColor="#33CCCC" Font-Names="微软雅黑" Orientation="Horizontal" BorderColor="Black" BorderStyle="Solid" Visible="false">
             <Items>
                 <asp:MenuItem Text="主页" Value="曲线与查询" NavigateUrl="~/MainMap.aspx"></asp:MenuItem>
                 <asp:MenuItem Text="报表" Value="报表" NavigateUrl="~/report.aspx"></asp:MenuItem>
@@ -1467,7 +1770,7 @@
         
 
         <!--功能区-->
-        <asp:Panel ID="Panel_gongnengqu" CssClass="Panel_gongnengqu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
+        <asp:Panel ID="Panel_gongnengqu" CssClass="Panel_gongnengqu" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61" Visible="false">
            <asp:Label ID="Label_gongnengqu" CssClass="Label_dangqiantongji" runat="server" Text="功能区" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
            <asp:ImageButton ID="image_graft" CssClass="image_graft" runat="server" ImageUrl="~/Resource/graph.png" OnClick="image_graft_Click" />
            <asp:ImageButton ID="Image_baojing" CssClass="image_attition" runat="server" ImageUrl="~/Resource/attention.png" OnClick="Image_baojing_Click" />
@@ -1477,28 +1780,664 @@
 
 
         <!--报警信息-->
-        <asp:Panel ID="Panel_baojing" CssClass="Panel_jingbao" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61">
+        <asp:Panel ID="Panel_baojing" CssClass="Panel_jingbao" runat="server" BorderColor="#00CCFF" BorderStyle="Groove" BorderWidth="3px" BackColor="#0C2B61" Visible="false">
             
         </asp:Panel>
-        <asp:Label ID="Label3" CssClass="Label_baojing" runat="server" Text="报警信息" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF"></asp:Label>
-        <asp:label ID="Label_header1"  runat="server" CssClass="Label_header1" Text="报警地点" ForeColor="White" />
-        <asp:label ID="Label_header2"  runat="server" CssClass="Label_header2" Text="报警位置" ForeColor="White" />
-        <asp:label ID="Label_header3"  runat="server" CssClass="Label_header3" Text="位移量" ForeColor="White" />
+        <asp:Label ID="Label3" CssClass="Label_baojing" runat="server" Text="报警信息" Font-Bold="True" Font-Names="微软雅黑" ForeColor="#CCFFFF" Visible="false"></asp:Label>
+        <asp:label ID="Label_header1"  runat="server" CssClass="Label_header1" Text="报警地点" ForeColor="White" Visible="false" />
+        <asp:label ID="Label_header2"  runat="server" CssClass="Label_header2" Text="报警位置" ForeColor="White"  Visible="false"/>
+        <asp:label ID="Label_header3"  runat="server" CssClass="Label_header3" Text="位移量" ForeColor="White"  Visible="false"/>
         
          <asp:Panel ID="mapinfo" CssClass="Panel_mapinfo" BackColor="White"  runat="server" >
-            
+            <asp:Label ID="label_min" CssClass="label_min" runat="server" Text="位移量小" Font-Size="8pt"></asp:Label>
+            <asp:Panel ID="info1" CssClass="info1" runat="server" BackColor="#00ff00"></asp:Panel>
+            <asp:Panel ID="info2" CssClass="info2" runat="server" BackColor="#11EE00"></asp:Panel>
+            <asp:Panel ID="info3" CssClass="info3" runat="server" BackColor="#22DD00"></asp:Panel>
+            <asp:Panel ID="info4" CssClass="info4" runat="server" BackColor="#33CC00"></asp:Panel>
+            <asp:Panel ID="info5" CssClass="info5" runat="server" BackColor="#44BB00"></asp:Panel>
+            <asp:Panel ID="info6" CssClass="info6" runat="server" BackColor="#55AA00"></asp:Panel>
+            <asp:Panel ID="info7" CssClass="info7" runat="server" BackColor="#669900"></asp:Panel>
+            <asp:Panel ID="info8" CssClass="info8" runat="server" BackColor="#778800"></asp:Panel>
+            <asp:Panel ID="info9" CssClass="info9" runat="server" BackColor="#887700"></asp:Panel>
+            <asp:Panel ID="info10" CssClass="info10" runat="server" BackColor="#996600"></asp:Panel>
+            <asp:Panel ID="info11" CssClass="info11" runat="server" BackColor="#AA5500"></asp:Panel>
+            <asp:Panel ID="info12" CssClass="info12" runat="server" BackColor="#BB4400"></asp:Panel>
+            <asp:Panel ID="info13" CssClass="info13" runat="server" BackColor="#CC3300"></asp:Panel>
+            <asp:Panel ID="info14" CssClass="info14" runat="server" BackColor="#DD2200"></asp:Panel>
+            <asp:Panel ID="info15" CssClass="info15" runat="server" BackColor="#EE1100"></asp:Panel>
+            <asp:Panel ID="info16" CssClass="info16" runat="server" BackColor="#FF0000"></asp:Panel>
+            <asp:Label ID="label_max" CssClass="label_max" runat="server" Text="位移量大" Font-Size="8pt"></asp:Label>
         </asp:Panel>
-        <asp:Panel ID="biaozhi1" BackColor="DarkBlue" CssClass="biaozhi1" runat="server"/>
-        <asp:Panel ID="biaozhi2" BackColor="Blue" CssClass="biaozhi2" runat="server"/>
-        <asp:Panel ID="biaozhi3" BackColor="LightGreen" CssClass="biaozhi3" runat="server"/>
-        <asp:Panel ID="biaozhi4" BackColor="Yellow" CssClass="biaozhi4" runat="server"/>
-        <asp:Panel ID="biaozhi5" BackColor="Red" CssClass="biaozhi5" runat="server"/>
-        <asp:Label ID="biaozhi1_label" CssClass="biaozhi1_label" runat="server" />
-        <asp:Label ID="biaozhi2_label" CssClass="biaozhi2_label" runat="server" />
-        <asp:Label ID="biaozhi3_label" CssClass="biaozhi3_label" runat="server" />
-        <asp:Label ID="biaozhi4_label" CssClass="biaozhi4_label" runat="server" />
-        <asp:Label ID="biaozhi5_label" CssClass="biaozhi5_label" runat="server" />
+        <asp:Panel ID="biaozhi1" BackColor="DarkBlue" CssClass="biaozhi1" runat="server" Visible="false"/>
+        <asp:Panel ID="biaozhi2" BackColor="Blue" CssClass="biaozhi2" runat="server" Visible="false"/>
+        <asp:Panel ID="biaozhi3" BackColor="LightGreen" CssClass="biaozhi3" runat="server" Visible="false"/>
+        <asp:Panel ID="biaozhi4" BackColor="Yellow" CssClass="biaozhi4" runat="server" Visible="false"/>
+        <asp:Panel ID="biaozhi5" BackColor="Red" CssClass="biaozhi5" runat="server" Visible="false"/>
+        <asp:Label ID="biaozhi1_label" CssClass="biaozhi1_label" runat="server"  Visible="false"/>
+        <asp:Label ID="biaozhi2_label" CssClass="biaozhi2_label" runat="server"  Visible="false"/>
+        <asp:Label ID="biaozhi3_label" CssClass="biaozhi3_label" runat="server"  Visible="false"/>
+        <asp:Label ID="biaozhi4_label" CssClass="biaozhi4_label" runat="server"  Visible="false"/>
+        <asp:Label ID="biaozhi5_label" CssClass="biaozhi5_label" runat="server"  Visible="false"/>
+
+
+        <asp:ImageButton ID="ImageButton_zhuye" CssClass="ImageButton_zhuye" runat="server" ImageUrl="~/Resource/主页.png" OnClick="ImageButton_zhuye_Click" />
+        
+        
+        
+        <asp:ImageButton ID="ImageButton_baobiao" CssClass="ImageButton_baobiao"  runat="server" ImageUrl="~/Resource/报表.png" OnClick="ImageButton_baobiao_Click" />
+        
+        
+        
+        <asp:ImageButton ID="ImageButton_chaxun" CssClass="auto-style98" runat="server" ImageUrl="~/Resource/查询.png" OnClick="ImageButton_chaxun_Click" />
+
+        <asp:Label ID="Label_zhuye" CssClass="Label_zhuye" runat="server" Text="主页" Font-Names="微软雅黑" Font-Size="10pt" ForeColor="White"></asp:Label>
+        <asp:Label ID="Label_baobiao" CssClass="Label_baobiao" runat="server" Text="报表" Font-Names="微软雅黑" Font-Size="10pt" ForeColor="White"></asp:Label>
+        
+        
+        <asp:Label ID="Label_chaxun" CssClass="Label_chaxun" runat="server" Text="查询" Font-Names="微软雅黑" ForeColor="White" Font-Size="10pt"></asp:Label>
     </div>
     </form>
 </body>
 </html>
+<script src="chart/dist/Chart.js"></script>
+<script src="https://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    // javascript操作 
+    var all_left_pos = new Array();
+    var all_left_value = new Array();
+    var all_right_pos = new Array();
+    var all_right_value = new Array();
+
+    var count_left=0;
+    var count_right=0;
+    ReadMap();
+    
+    var jubu_time_list = new Array();
+    var jubu_value_list = new Array();
+    var myLineChart;
+    //var btn_close;
+    var start = 0;
+
+
+    var myallpoint_x = new Array();
+    var myallpoint_y = new Array();
+    var allvalue = new Array();
+    var allposition = new Array();
+    var myLineChart;
+    var btn_close;
+    var btn_fuwei;
+
+    var qianjin;
+    var houtui;
+
+    var qianjin10;
+    var houtui10;
+
+    function ReadMap() {
+        all_left_pos = [];
+        all_left_value = [];
+        all_right_pos = [];
+        all_right_value = [];
+
+        count_left = 0;
+        count_right = 0;
+
+        <%
+        for(int k=0;k<left_pos.Count;k++){
+           %>
+
+        try {
+
+            // 左边
+            all_left_pos.push("<%=left_pos[k]%>");
+            all_left_value.push("<%=left_value[k]%>");
+        }
+        catch (err) {
+            //alert(err.message.toString());
+        }
+
+
+        //index = index + 1;
+        count_left = count_left + 1;
+        <%}
+    %>
+
+        <%
+        for(int k=0;k<right_pos.Count;k++){
+           %>
+
+        try {
+
+            // 右边
+            all_right_pos.push("<%=right_pos[k]%>");
+            all_right_value.push("<%=right_value[k]%>");
+        }
+        catch (err) {
+            //alert(err.message.toString());
+        }
+
+
+        //index = index + 1;
+        count_right = count_right + 1;
+        <%}
+    %>
+        
+    }
+
+
+
+    
+    for (var i = 0; i < count_left; i++)
+    {
+        try
+        {
+
+            var yingbian = parseFloat(all_left_value[i]) +parseFloat( all_right_value[i]);
+            //alert(yingbian);
+            if (yingbian < 0.1)
+            {
+              //  alert("1");
+                create_ceng(i, "/Resource/zhu1.png");
+            }
+            if (yingbian >= 0.1 && yingbian < 0.25) {
+               // alert("2");
+                create_ceng(i, "/Resource/zhu2.png");
+            }
+            if (yingbian >= 0.25 && yingbian < 0.35) {
+               // alert("3");
+                create_ceng(i, "/Resource/zhu3.png");
+            }
+            if (yingbian >= 0.35 && yingbian < 0.5) {
+               // alert("4");
+                create_ceng(i, "/Resource/zhu4.png");
+            }
+            if (yingbian >= 0.5 && yingbian < 0.7) {
+               // alert("5");
+                create_ceng(i, "/Resource/zhu5.png");
+            }
+            if (yingbian >= 0.7 && yingbian < 0.9) {
+               // alert("6");
+                create_ceng(i, "/Resource/zhu6.png");
+            }
+            if (yingbian >= 0.9 && yingbian < 1.1) {
+               // alert("7");
+                create_ceng(i, "/Resource/zhu7.png");
+            }
+            if (yingbian >= 1.1 && yingbian < 1.4) {
+               // alert("8");
+                create_ceng(i, "/Resource/zhu8.png");
+            }
+            if (yingbian >= 1.4 && yingbian < 1.6) {
+               // alert("9");
+                create_ceng(i, "/Resource/zhu9.png");
+            }
+            if (yingbian >= 1.6 && yingbian < 1.9) {
+               // alert("10");
+                create_ceng(i, "/Resource/zhu10.png");
+            }
+            if (yingbian >= 1.9 && yingbian < 2.2) {
+               // alert("11");
+                create_ceng(i, "/Resource/zhu11.png");
+            }
+            if (yingbian >= 2.2 && yingbian < 2.4) {
+               // alert("12");
+                create_ceng(i, "/Resource/zhu12.png");
+            }
+            if (yingbian >= 2.4 && yingbian < 2.6) {
+               // alert("13");
+                create_ceng(i, "/Resource/zhu13.png");
+            }
+            if (yingbian >= 2.6 && yingbian < 2.9) {
+               // alert("14");
+                create_ceng(i, "/Resource/zhu14.png");
+            }
+            if (yingbian >= 2.9 && yingbian < 4) {
+                //alert("15");
+                create_ceng(i, "/Resource/zhu15.png");
+            }
+            if (yingbian >= 4) {
+               // alert("16");
+                create_ceng(i, "/Resource/zhu16.png");
+            }
+            
+
+        }
+        catch (err)
+        {
+
+        }
+    }
+
+    function create_ceng(index,ceng_name)
+    {
+        var a = document.createElement("img");
+        a.src = ceng_name;
+        a.style.position = "absolute";
+        //alert("4");
+        a.style.left = "50%";
+        //alert("5");
+        a.style.top = (index * 20+180).toString()+ "px";
+        //alert("6");
+        a.style.width = "10%";
+        //alert("7");
+        a.style.height = "20px";
+        //alert("8");
+        a.style.zIndex = "90";
+        //alert("9");
+        try {
+            document.getElementById("Panel2").appendChild(a);
+        }
+        catch (err1) {
+            alert(err1);
+        }
+    }
+    
+    // 修改行数
+    //for(var i=0;i<count_left;i++)
+    //{
+    //    if (i >= 152)
+    //    {
+    //        break;
+    //    }
+    //    try
+    //    {
+            
+    //        line(screen.width * 0.29, 180+20 * i, screen.width * 0.29,180+ 20 * (i + 1), document.getElementById("Panel2"), all_left_value[i],all_left_pos[i]);
+    //    }
+    //    catch (err) {
+    //        alert(err+" count:"+i);
+    //    }
+    //}
+    
+    //for(var i=0;i<count_right;i++)
+    //{
+    //    if (i >= 152)
+    //    {
+    //        break;
+    //    }
+    //    try
+    //    {
+    //        line(screen.width * 0.48, 180+20 * i, screen.width * 0.48, 180+20 * (i + 1), document.getElementById("Panel2"), all_right_value[i],all_right_pos[i]);
+    //    }
+    //    catch (err) {
+    //        alert(err);}
+    //}
+    //document.write("<div id='tip' style='position:absolute; width:300px; z-index:15; background-color: #ffffff; border: 1px solid gray; overflow: visible;visibility: hidden;font-size:12px;padding:12px;color:#333333'></div>")
+
+    //alert(count_left);
+    //alert(count_right);
+
+    function showtip(w, event) {
+        var x = event.x;
+        var y = event.y;
+        // alert(y);
+        tip.innerHTML = w;
+        tip.style.visibility = "visible";
+        tip.style.left = (x + 10) + "px";
+        tip.style.top = (y + document.body.scrollTop + 10) + "px";
+        tip.style.zIndex = 30;
+    }
+
+    // 前端的技术
+    function TestAjaxParam(position) {
+        $.ajax({
+            type: "POST",
+            url: "SubMap.aspx/Return_Values_Posision",
+            async: false,
+            data: '{"position":' + position + '}',
+            // data:position,
+            dataType: "text",
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                
+                red_json_value(data);
+                // 位置信息
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                $("#p_test").innerHTML = "there is something wrong!";
+                alert(XMLHttpRequest.status);
+                alert(XMLHttpRequest.readyState);
+                alert(textStatus);
+            }
+        })
+    }
+
+    // 这里要加处理字符串的函数
+    function red_json_value(string) {
+
+        var length = string.length;
+        // 数量读出来之后
+        jubu_time_list = [];
+        jubu_value_list = [];
+        var mycount = 0;
+        for (var i = 0; i < length - 1; i++) {
+            // alert(string.substr(i, 1));
+            if (string.substr(i, 2) == '":') {
+                //mycount++;
+
+                for (var j = i; j < length; j++) {
+                    if (string.substr(j, 2) == '",') {
+                        // 日期
+                        //alert("date");
+                        //alert(string.substr(i + 3, j - i - 3));
+                        jubu_time_list.push(string.substr(i + 3, j - i - 3));
+                        break;
+                    }
+                    if (string.substr(j, 1) == '[') {
+                        // alert("引导");
+                        break;
+                        //
+                    }
+                    if (string.substr(j, 1) == '}') {
+                        // 位移
+                        //alert("value");
+                        //alert(string.substr(i + 2, j - i - 2));
+
+                        var weiyi = string.substr(i + 2, j - i - 2);
+                        // alter(weiyi);
+                        //var xiaoshu = weiyi.toFixed(2);
+                        //alter(xiaoshu);
+
+                        var weiyi_float = parseFloat(weiyi);
+                        var weiyi_cut = weiyi_float.toFixed(2);
+                        jubu_value_list.push(weiyi_cut);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    function hidetip() {
+        tip.style.innerHTML = ""
+        tip.style.visibility = "hidden";
+    }
+
+
+    // 画直线
+    function createPoint(container, x, y, value,position) {
+        var node = document.createElement("div");
+        
+        var myvalue = parseFloat(value);
+        //alert(position);
+        node.textContent = myvalue.toFixed(2);
+        node.nodeName = position;
+        node.className = "line";
+        node.id = position;
+
+        node.style.left = x + "px";
+        node.style.top = y + "px";
+        node.style.zIndex = 14;
+        node.style.width = 20 + "px";
+
+        node.onclick = function (event) {
+
+            document.getElementById("chart_wrapper").style.display = "block";
+            selected_datetime = new Date();
+            Draw_Chart(this.id, selected_datetime,start);
+        }
+
+        node.onmousemove = function (event) {
+            //alert("in");
+            showtip('<b>标题：</b><br>当前位置：' + this.id + ' 当前位移:' + this.textContent + "</br>'", event);
+        }
+
+        node.onmouseout = function (event) {
+            hidetip();
+        }
+       
+        var myvalue = parseFloat(value.toString());
+        //alert(myvalue.toString());
+
+        var value1 = "<%=value1%>";
+        var value2 = "<%=value2%>";
+        var value3 = "<%=value3%>";
+        var value4 = "<%=value4%>";
+        var value5 = "<%=value5%>";
+
+        if (myvalue <= value1)
+            node.style.backgroundColor = "#00FF00";
+        if (myvalue > value1 && myvalue < value2)
+            node.style.backgroundColor = "#11EE00";
+        if (myvalue >= value2 && myvalue < value3)
+            node.style.backgroundColor = "#22DD00";
+        if (myvalue >= value3 && myvalue < value4)
+            node.style.backgroundColor = "#33CC00";
+        if (myvalue >= value4 && myvalue < value5)
+            node.style.backgroundColor = "#44BB00";
+        if (myvalue >= value5)
+            node.style.backgroundColor = "#FF0000";
+        container.appendChild(node);
+    }
+
+    function Draw_Chart(myposition, datetime, start_index) {
+        // 每次图像只有十个
+        try {
+            btn_close = document.getElementById("btn_close");
+
+            qianjin = document.getElementById("btn_qianjin");
+
+            houtui = document.getElementById("btn_houtui");
+            btn_fuwei = document.getElementById("btn_fuwei");
+            qianjin10 = document.getElementById("btn_qianjin10");
+            houtui10 = document.getElementById("btn_houtui10");
+
+
+            btn_close.style.visibility = "visible";
+            qianjin.style.visibility = "visible";
+            houtui.style.visibility = "visible";
+            btn_fuwei.style.visibility = "visible";
+            qianjin10.style.visibility = "visible";
+            houtui10.style.visibility = "visible";
+
+            try {
+                myLineChart.destroy();
+            }
+            catch (err) {
+                // alert(err);
+            }
+            btn_close.onclick = function (event) {
+
+                btn_close.style.visibility = "hidden";
+                qianjin.style.visibility = "hidden";
+                houtui.style.visibility = "hidden";
+                btn_fuwei.style.visibility = "hidden";
+                qianjin10.style.visibility = "hidden";
+                houtui10.style.visibility = "hidden";
+                
+                document.getElementById("chart_wrapper").style.display = "none";
+            }
+
+
+
+            jubu_time_list = [];
+            jubu_value_list = [];
+
+
+            var now_jubu_time_list = new Array();
+            var now_jubu_value_list = new Array();
+
+            now_jubu_time_list = [];
+            now_jubu_value_list = [];
+            TestAjaxParam(myposition.toString());
+            qianjin.onclick = function (event) {
+                if (start_index > 0) {
+                    start_index = start_index - 1;
+                    Draw_Chart(myposition, datetime, start_index);
+                    start = start_index;
+                }
+            }
+
+            houtui.onclick = function (event) {
+                if (start_index < jubu_time_list.length) {
+                    start_index = start_index + 1;
+                    Draw_Chart(myposition, datetime, start_index);
+                    start = start_index;
+                }
+            }
+
+            btn_fuwei.onclick = function (event) {
+                start_index = 0;
+                start = 0;
+                Draw_Chart(myposition, datetime, start_index);
+            }
+
+
+            qianjin10.onclick = function (event) {
+                if (start_index - 10 >= 0) {
+                    start_index = start_index - 10;
+                    Draw_Chart(myposition, datetime, start_index);
+                    start = start_index;
+                }
+            }
+
+            houtui10.onclick = function (event) {
+                if (start_index + 9 < jubu_time_list.length) {
+                    start_index = start_index + 10;
+                    Draw_Chart(myposition, datetime, start_index);
+                    start = start_index;
+                }
+            }
+
+            //alert(jubu_time_list.length.toString());
+            if (jubu_time_list.length >= start_index + 10) {
+                // 完整的显示10个
+                // alert(jubu_time_list.length);
+                now_jubu_time_list.push(0);
+                now_jubu_value_list.push(0);
+                for (var i = jubu_time_list.length - 1 - start_index - 9; i <= jubu_time_list.length - 1 - start_index; i++) {
+                    now_jubu_time_list.push(jubu_time_list[i]);
+                    now_jubu_value_list.push(jubu_value_list[i]);
+                    //alert(i);
+                }
+              //  now_jubu_time_list.push("阈值点");
+              //  now_jubu_value_list.push(2);
+                //alert(now_jubu_time_list);
+
+            }
+            else if (jubu_time_list.length >= start_index) {
+                // 只显示一部分
+                now_jubu_time_list.push(0);
+                now_jubu_value_list.push(0);
+                for (var i = 0 ; i < jubu_time_list.length - 1 - start_index; i++) {
+                    now_jubu_time_list.push(jubu_time_list[i]);
+                    now_jubu_value_list.push(jubu_value_list[i]);
+                }
+              //  now_jubu_time_list.push("阈值点");
+              //  now_jubu_value_list.push(2);
+                //alert(now_jubu_time_list);
+
+            }
+
+
+
+
+
+
+
+
+            var data = {
+
+                labels: now_jubu_time_list,
+
+
+
+
+                datasets: [
+                    {
+
+                        label: "当前位置:" + myposition + "位移量(mm)",
+                        fill: true,
+
+                        lineTension: 0.1,
+                        backgroundColor: "rgba(75,192,192,0.4)",
+                        borderColor: "rgba(75,192,192,1)",
+                        borderCapStyle: 'butt',
+                        borderDash: [],
+                        borderDashOffset: 0.0,
+                        borderJoinStyle: 'miter',
+                        pointBorderColor: "rgba(255,255,255,1)",
+                        pointBackgroundColor: "#fff",
+                        pointBorderWidth: 1,
+                        pointHoverRadius: 5,
+                        pointHoverBackgroundColor: "rgba(255,255,255,1)",
+                        pointHoverBorderColor: "rgba(255,255,255,1)",
+                        pointHoverBorderWidth: 2,
+                        pointRadius: 1,
+                        pointHitRadius: 10,
+                        //data: [65, 59, 80, 81, 56, 55, 40],
+                        data: now_jubu_value_list,
+                        spanGaps: false,
+
+                    }
+                ]
+            };
+
+
+            var ctx = document.getElementById("myChart").getContext("2d");
+            myLineChart = new Chart(ctx, {
+                type: 'line', data: data, options: {
+                    label: { name: myposition, }, yAxis: {          //纵轴标尺固定
+                        type: 'value',
+                        scale: true,
+                        name: '位移量',
+                        max: 2,
+                        min: 0,
+                        boundaryGap: [0.2, 0.2]
+                    }
+                }
+
+            });
+
+
+            myLineChart.canvas.style.visibility = "visible";
+            //myLineChart.width = screen.width * 0.1;
+            //myLineChart.height = screen.height * 0.6;
+            //fChart.defaults.
+        }
+        catch (err) {
+            alert(err);
+        }
+    }
+
+
+    function line(startX, startY, endX, endY, container, value,position) {
+        if (startX == endX) {
+            if (startY > endY) {
+                var tempY = startY;
+                startY = endY;
+                endY = tempY;
+            }
+            for (var k = startY; k < endY; k++) {
+               // alert(position);
+                createPoint(container, startX, k, value,position);
+            }
+            return;
+        }
+        // y = ax + b，这里深刻体现了数学的重要性啊  
+        var a = (startY - endY) / (startX - endX);
+        var b = startY - ((startY - endY) / (startX - endX)) * startX;
+        if (Math.abs(startX - endX) > Math.abs(startY - endY)) { //这是为了多画几个point加的选择
+            if (startX > endX) {
+                var tempX = endX;
+                endX = startX;
+                startX = tempX;
+            }
+            for (var i = startX; i <= endX; i++) {
+                createPoint(container, i, a * i + b, value,position);
+            }
+        } else {
+            if (startY > endY) {
+                var tempY = startY;
+                startY = endY;
+                endY = tempY;
+            }
+            for (var j = startY; j <= endY; j++) {
+                createPoint(container, (j - b) / a, j, value,position);
+            }
+        }
+    }
+</script>

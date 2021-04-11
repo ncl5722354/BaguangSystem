@@ -1,0 +1,11 @@
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\bin\Debug\YinRanSmart.exe.config
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\bin\Debug\YinRanSmart.exe
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\bin\Debug\YinRanSmart.pdb
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\bin\Debug\ViewConfig.dll
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\bin\Debug\ViewConfig.pdb
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.csprojResolveAssemblyReference.cache
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.Form1.resources
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.Properties.Resources.resources
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.csproj.GenerateResource.Cache
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.exe
+D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.pdb

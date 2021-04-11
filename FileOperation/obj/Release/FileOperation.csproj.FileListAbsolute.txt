@@ -9,3 +9,15 @@ D:\程序\warningsystem\FileOperation\obj\Release\FileOperation.csprojResolveAss
 D:\程序\warningsystem\FileOperation\obj\Release\FileOperation.csproj.ResolveComReference.cache
 D:\程序\warningsystem\FileOperation\obj\Release\FileOperation.dll
 D:\程序\warningsystem\FileOperation\obj\Release\FileOperation.pdb
+D:\程序\深圳项目\WarningSystem-master\FileOperation\bin\Release\FileOperation.dll
+D:\程序\深圳项目\WarningSystem-master\FileOperation\bin\Release\FileOperation.pdb
+D:\程序\深圳项目\WarningSystem-master\FileOperation\obj\Release\FileOperation.csprojResolveAssemblyReference.cache
+D:\程序\深圳项目\WarningSystem-master\FileOperation\obj\Release\FileOperation.csproj.ResolveComReference.cache
+D:\程序\深圳项目\WarningSystem-master\FileOperation\obj\Release\FileOperation.dll
+D:\程序\深圳项目\WarningSystem-master\FileOperation\obj\Release\FileOperation.pdb
+D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\bin\Release\FileOperation.dll
+D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\bin\Release\FileOperation.pdb
+D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\obj\Release\FileOperation.csprojResolveAssemblyReference.cache
+D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\obj\Release\FileOperation.csproj.ResolveComReference.cache
+D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\obj\Release\FileOperation.dll
+D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\obj\Release\FileOperation.pdb

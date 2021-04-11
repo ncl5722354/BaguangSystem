@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{092B4FE5-CE9B-4644-AE0A-5D0115E7DB19}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>baguang_new</RootNamespace>
+    <AssemblyName>baguang_new</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Baobiaotongji.aspx" />
+    <Content Include="chart\dist\Chart.bundle.js" />
+    <Content Include="chart\dist\Chart.bundle.min.js" />
+    <Content Include="chart\dist\Chart.css" />
+    <Content Include="chart\dist\Chart.js" />
+    <Content Include="chart\dist\Chart.min.css" />
+    <Content Include="chart\dist\Chart.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="image\1.png" />
+    <Content Include="image\2.png" />
+    <Content Include="image\3.png" />
+    <Content Include="image\bg.png" />
+    <Content Include="image\down.png" />
+    <Content Include="image\login_over - 复制.png" />
+    <Content Include="image\login_over3.png" />
+    <Content Include="image\Sound_off.png" />
+    <Content Include="image\Sound_on.png" />
+    <Content Include="image\up.png" />
+    <Content Include="image\设置.png" />
+    <Content Include="jsgrid\.editorconfig" />
+    <Content Include="jsgrid\.gitignore" />
+    <Content Include="jsgrid\.npmignore" />
+    <Content Include="jsgrid\.travis.yml" />
+    <Content Include="jsgrid\bower.json" />
+    <Content Include="jsgrid\LICENSE" />
+    <Content Include="jsgrid\package.json" />
+    <Content Include="jsgrid\README.md" />
+    <Content Include="pic\left1.png" />
+    <Content Include="pic\right1.png" />
+    <Content Include="pic\按钮_信息表格.png" />
+    <Content Include="pic\按钮_实时数据.png" />
+    <Content Include="pic\按钮_实时曲线.png" />
+    <Content Include="pic\按钮_电力监测1.png" />
+    <Content Include="pic\标题.png" />
+    <Content Include="pic\背景.png" />
+    <Content Include="Show_bianhua_yuefen.aspx" />
+    <Content Include="sound\1号坡道区域.wav" />
+    <Content Include="sound\1测.wav" />
+    <Content Include="sound\2号坡道区域.wav" />
+    <Content Include="sound\2坡中.wav" />
+    <Content Include="sound\2坡顶.wav" />
+    <Content Include="sound\2测.wav" />
+    <Content Include="sound\3号坡道区域.wav" />
+    <Content Include="sound\3坡.wav" />
+    <Content Include="sound\3测.wav" />
+    <Content Include="sound\4测.wav" />
+    <Content Include="userpassword.aspx" />
+    <Content Include="zhizhuangaspx.aspx" />
+    <Content Include="chart\bower.json" />
+    <Content Include="chart\composer.json" />
+    <Content Include="chart\LICENSE.md" />
+    <Content Include="chart\package.json" />
+    <Content Include="chart\README.md" />
+    <None Include="Properties\PublishProfiles\7777777.pubxml" />
+    <Content Include="sound\1测.ogg" />
+    <Content Include="sound\1号坡道区域.ogg" />
+    <Content Include="sound\2测.ogg" />
+    <Content Include="sound\2号坡道区域.ogg" />
+    <Content Include="sound\2坡顶.ogg" />
+    <Content Include="sound\2坡中.ogg" />
+    <Content Include="sound\3测.ogg" />
+    <Content Include="sound\3号坡道区域.ogg" />
+    <Content Include="sound\3坡.ogg" />
+    <Content Include="sound\4测.ogg" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\login_over.png" />
+    <Content Include="image\LOGO.png" />
+    <Content Include="image\p1.png" />
+    <Content Include="image\position.png" />
+    <Content Include="image\title_bg.png" />
+    <Content Include="image\主页.png" />
+    <Content Include="image\地图.png" />
+    <Content Include="image\坝光收费站边坡健康监测系统-文字效果.png" />
+    <Content Include="image\报表.png" />
+    <Content Include="image\查询.png" />
+    <Content Include="jsgrid\css\icons-2x.png" />
+    <Content Include="jsgrid\css\icons.png" />
+    <Content Include="jsgrid\css\jsgrid.css" />
+    <Content Include="jsgrid\css\theme.css" />
+    <Content Include="jsgrid\demos\basic.html" />
+    <Content Include="jsgrid\demos\batch-delete.html" />
+    <Content Include="jsgrid\demos\custom-grid-field.html" />
+    <Content Include="jsgrid\demos\custom-load-indicator.html" />
+    <Content Include="jsgrid\demos\custom-row-renderer.html" />
+    <Content Include="jsgrid\demos\custom-view.html" />
+    <Content Include="jsgrid\demos\data-manipulation.html" />
+    <Content Include="jsgrid\demos\db.js" />
+    <Content Include="jsgrid\demos\demos.css" />
+    <Content Include="jsgrid\demos\external-pager.html" />
+    <Content Include="jsgrid\demos\index.html" />
+    <Content Include="jsgrid\demos\loading-by-page.html" />
+    <Content Include="jsgrid\demos\localization.html" />
+    <Content Include="jsgrid\demos\odata-service.html" />
+    <Content Include="jsgrid\demos\rows-reordering.html" />
+    <Content Include="jsgrid\demos\sorting.html" />
+    <Content Include="jsgrid\demos\static-data.html" />
+    <Content Include="jsgrid\demos\validation.html" />
+    <Content Include="jsgrid\dist\jsgrid-theme.css" />
+    <Content Include="jsgrid\dist\jsgrid-theme.min.css" />
+    <Content Include="jsgrid\dist\jsgrid.css" />
+    <Content Include="jsgrid\dist\jsgrid.js" />
+    <Content Include="jsgrid\dist\jsgrid.min.css" />
+    <Content Include="jsgrid\dist\jsgrid.min.js" />
+    <Content Include="jsgrid\external\jquery\jquery-1.8.3.js" />
+    <Content Include="jsgrid\external\qunit\qunit-1.10.0.css" />
+    <Content Include="jsgrid\external\qunit\qunit-1.10.0.js" />
+    <Content Include="jsgrid\Gruntfile.js" />
+    <Content Include="jsgrid\src\fields\jsgrid.field.checkbox.js" />
+    <Content Include="jsgrid\src\fields\jsgrid.field.control.js" />
+    <Content Include="jsgrid\src\fields\jsgrid.field.number.js" />
+    <Content Include="jsgrid\src\fields\jsgrid.field.select.js" />
+    <Content Include="jsgrid\src\fields\jsgrid.field.text.js" />
+    <Content Include="jsgrid\src\fields\jsgrid.field.textarea.js" />
+    <Content Include="jsgrid\src\i18n\de.js" />
+    <Content Include="jsgrid\src\i18n\es.js" />
+    <Content Include="jsgrid\src\i18n\fr.js" />
+    <Content Include="jsgrid\src\i18n\he.js" />
+    <Content Include="jsgrid\src\i18n\ja.js" />
+    <Content Include="jsgrid\src\i18n\ka.js" />
+    <Content Include="jsgrid\src\i18n\pl.js" />
+    <Content Include="jsgrid\src\i18n\pt-br.js" />
+    <Content Include="jsgrid\src\i18n\pt.js" />
+    <Content Include="jsgrid\src\i18n\ru.js" />
+    <Content Include="jsgrid\src\i18n\tr.js" />
+    <Content Include="jsgrid\src\i18n\zh-cn.js" />
+    <Content Include="jsgrid\src\i18n\zh-tw.js" />
+    <Content Include="jsgrid\src\jsgrid.core.js" />
+    <Content Include="jsgrid\src\jsgrid.field.js" />
+    <Content Include="jsgrid\src\jsgrid.load-indicator.js" />
+    <Content Include="jsgrid\src\jsgrid.load-strategies.js" />
+    <Content Include="jsgrid\src\jsgrid.sort-strategies.js" />
+    <Content Include="jsgrid\src\jsgrid.validation.js" />
+    <Content Include="mywebserver.asmx" />
+    <Content Include="submap1.aspx" />
+    <Content Include="jsgrid\tests\index.html" />
+    <Content Include="jsgrid\tests\jsgrid.field.tests.js" />
+    <Content Include="jsgrid\tests\jsgrid.sort-strategies.tests.js" />
+    <Content Include="jsgrid\tests\jsgrid.tests.js" />
+    <Content Include="jsgrid\tests\jsgrid.validation.tests.js" />
+    <Content Include="Login_View.aspx" />
+    <Content Include="MainView.aspx" />
+    <Content Include="submap3.aspx" />
+    <Content Include="submap2.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Baobiaotongji.aspx.cs">
+      <DependentUpon>Baobiaotongji.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Baobiaotongji.aspx.designer.cs">
+      <DependentUpon>Baobiaotongji.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="mywebserver.asmx.cs">
+      <DependentUpon>mywebserver.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Show_bianhua_yuefen.aspx.cs">
+      <DependentUpon>Show_bianhua_yuefen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show_bianhua_yuefen.aspx.designer.cs">
+      <DependentUpon>Show_bianhua_yuefen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="submap1.aspx.cs">
+      <DependentUpon>submap1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="submap1.aspx.designer.cs">
+      <DependentUpon>submap1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login_View.aspx.cs">
+      <DependentUpon>Login_View.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login_View.aspx.designer.cs">
+      <DependentUpon>Login_View.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.aspx.cs">
+      <DependentUpon>MainView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainView.aspx.designer.cs">
+      <DependentUpon>MainView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="submap3.aspx.cs">
+      <DependentUpon>submap3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="submap3.aspx.designer.cs">
+      <DependentUpon>submap3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="submap2.aspx.cs">
+      <DependentUpon>submap2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="submap2.aspx.designer.cs">
+      <DependentUpon>submap2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userpassword.aspx.cs">
+      <DependentUpon>userpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userpassword.aspx.designer.cs">
+      <DependentUpon>userpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="zhizhuangaspx.aspx.cs">
+      <DependentUpon>zhizhuangaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zhizhuangaspx.aspx.designer.cs">
+      <DependentUpon>zhizhuangaspx.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileOperation\FileOperation.csproj">
+      <Project>{9ed43ee0-8a99-4c7d-bbac-464573da4dd9}</Project>
+      <Name>FileOperation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlConnect\SqlConnect\SqlConnect.csproj">
+      <Project>{a220dcc6-9e02-4060-818e-1d71c24570ca}</Project>
+      <Name>SqlConnect</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\String_Caozuo\String_Caozuo.csproj">
+      <Project>{200df22a-670b-410b-9887-4d43abf185f9}</Project>
+      <Name>String_Caozuo</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20997</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20997/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

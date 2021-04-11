@@ -26,7 +26,11 @@ namespace FileOperation
                 ArrayList mylist = new ArrayList();        //用来装返回的字符串
                 while((read_string=sr.ReadLine())!=null)
                 {
-                    mylist.Add(read_string);
+                    try
+                    {
+                        mylist.Add(read_string);
+                    }
+                    catch { }
                 }
                 int count=mylist.Count;
                 if (count <=0) return null;  // 数量不能为0
@@ -94,13 +98,17 @@ namespace FileOperation
         }
         public static ArrayList Read_All_Files(string path,string filetype)
         {
-            ArrayList filename_list = new ArrayList();
-            DirectoryInfo folder = new DirectoryInfo(path);
-            foreach (FileInfo file in folder.GetFiles(filetype))
+            try
             {
-                filename_list.Add(file.Name);
+                ArrayList filename_list = new ArrayList();
+                DirectoryInfo folder = new DirectoryInfo(path);
+                foreach (FileInfo file in folder.GetFiles(filetype))
+                {
+                    filename_list.Add(file.Name);
+                }
+                return filename_list;
             }
-            return filename_list;
+            catch { return null; }
         }
 
 

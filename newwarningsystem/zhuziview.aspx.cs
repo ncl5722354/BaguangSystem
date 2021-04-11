@@ -34,13 +34,19 @@ namespace newwarningsystem
 
         public static string listbox3_select = "";
 
-        static double value1 = 0;
-        static double value2 = 0;
-        static double value3 = 0;
-        static double value4 = 0;
-        static double value5 = 0;
+        public  static double value1 = 0;
+        public  static double value2 = 0;
+        public  static double value3 = 0;
+        public  static double value4 = 0;
+        public  static double value5 = 0;
 
         public static bool Panel_Chart_Is;
+
+        public static List<double> left_pos=new List<double>();
+        public static List<double> left_value=new List<double>();
+
+        public static List<double> right_pos=new List<double>();
+        public static List<double> right_value=new List<double>();
         protected void Click(object sender, EventArgs e)
         {
             Chart2.Series[0].Points.Clear();
@@ -184,6 +190,13 @@ namespace newwarningsystem
 
         public void Set_Start_End(double start1, double end1, double start2, double end2)
         {
+
+            left_pos.Clear();
+            left_value.Clear();
+
+            right_pos.Clear();
+            right_value.Clear();
+
             double allcount = 0;
                 double cout1 = 0;
                 double cout2 = 0;
@@ -232,18 +245,23 @@ namespace newwarningsystem
                                 // (value-value*Math.Sqrt(3)/2)/0.0482;
                                 double value = Math.Round(Math.Abs(now - jizhun) * (1 - Math.Sqrt(3) / 2) / 0.0482, 3);
                                 // 左侧
-                                LinkButton label_position = new LinkButton();
+                                left_pos.Add(position);
+                                left_value.Add(value);
+                                
+
+
+                                // LinkButton label_position = new LinkButton();
 
                                 //ImageButton label = new ImageButton();
-                                label_position.Click += new EventHandler(Click);
+                               // label_position.Click += new EventHandler(Click);
                                 // label_position.Attributes.Add("onclick", "Click()");
 
-                                label_position.Text = position.ToString("#0.000");
-                                label_position.BackColor = System.Drawing.Color.Blue;
-                                label_position.ForeColor = System.Drawing.Color.White;
+                                //label_position.Text = position.ToString("#0.000");
+                                //label_position.BackColor = System.Drawing.Color.FromArgb(100,155 , 0);
+                                //label_position.ForeColor = System.Drawing.Color.White;
 
                                 Button label_value = new Button();
-                                label_value.Text = "1";
+                                label_value.Text = " ";
                                 count1++;
                                 //position: absolute
                                 double danwei = (end_postion - start_position) / (end1 - start1);
@@ -254,38 +272,40 @@ namespace newwarningsystem
                                 //label_position.Style["left"] = "20px";
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (start_position + count1 * danwei).ToString() + "px";
-                                label_value.Style["left"] = "33%";
-                                label_value.Text = position_string;
+                                label_value.Style["left"] = "40%";
+                                label_value.Style["width"] = "3px";
+                                label_value.Style["z-index"] = "15";
+                                //label_value.Text = position_string;
 
                                 if (value < value1)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.DarkBlue;
+                                    label_value.BackColor = System.Drawing.Color.FromArgb(0,255 , 0);
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value >= value1 && value <= value2)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.Blue;
+                                    label_value.BackColor = System.Drawing.Color.FromArgb(100,155 , 0);
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value >= value2 && value <= value3)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.LightGreen;
+                                    label_value.BackColor = System.Drawing.Color.FromArgb(155,100 , 0);
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value > value3 && value < value5)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.Yellow;
+                                    label_value.BackColor = System.Drawing.Color.FromArgb(200,55 , 0);
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value >= value5)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.Red;
+                                    label_value.BackColor = System.Drawing.Color.FromArgb(255,0 , 0);
                                     label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 label_value.ToolTip = "位置:" + position_string + " 位移量:" + value.ToString();
                                 label_value.Click += new EventHandler(Click);
                                 //this.form1.Controls.Add(label_position);
-                                this.Panel2.Controls.Add(label_value);
+                              //  this.Panel2.Controls.Add(label_value);
 
                                // form1.Controls.Add(imagebutton);
                                 //show_count = 0;
@@ -366,22 +386,22 @@ namespace newwarningsystem
 
                                     if (position >= 602 && position <= 675)
                                     {
-                                        labelposition.Text = "管道1";
+                                        labelposition.Text = "侧斜管1";
                                     }
 
                                     if (position >= 742 && position <= 810)
                                     {
-                                        labelposition.Text = "管道2";
+                                        labelposition.Text = "侧斜管2";
                                     }
 
                                     if (position >= 875 && position <= 939)
                                     {
-                                        labelposition.Text = "管道3";
+                                        labelposition.Text = "侧斜管3";
                                     }
 
                                     if (position >= 994 && position <= 1069)
                                     {
-                                        labelposition.Text = "管道4";
+                                        labelposition.Text = "侧斜管4";
                                     }
 
                                     labelposition.ForeColor = System.Drawing.Color.White;
@@ -455,44 +475,46 @@ namespace newwarningsystem
                                 double now = double.Parse(value_now_string);
                                 // (value-value*Math.Sqrt(3)/2)/0.0482;
                                 double value = Math.Round(Math.Abs(now - jizhun) * (1 - Math.Sqrt(3) / 2) / 0.0482, 3);
-                                // 左侧
-                                LinkButton label_position = new LinkButton();
-                                label_position.Click += new EventHandler(Click);
+                                // 右侧
+                                //LinkButton label_position = new LinkButton();
+                                //label_position.Click += new EventHandler(Click);
                                 //label_position.Attributes.Add("onclick", "Click()");
 
 
-                                label_position.Text = position.ToString("#0.000");
-                                label_position.BackColor = System.Drawing.Color.Blue;
-                                label_position.ForeColor = System.Drawing.Color.White;
+                                //label_position.Text = position.ToString("#0.000");
+                                //label_position.BackColor = System.Drawing.Color.FromArgb(100,155 , 0);
+                                //label_position.ForeColor = System.Drawing.Color.White;
 
                                 Button label_value = new Button();
-                                label_value.Text = "1";
+                                label_value.Text = " ";
+                                right_pos.Add(position);
+                                right_value.Add(value);
 
                                 if (value < value1)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.DarkBlue;
-                                    label_value.ForeColor = System.Drawing.Color.White;
+                                  label_value.BackColor = System.Drawing.Color.FromArgb(0,255 , 0);
+                                  label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value >= value1 && value <= value2)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.Blue;
-                                    label_value.ForeColor = System.Drawing.Color.White;
+                                   label_value.BackColor = System.Drawing.Color.FromArgb(100,155 , 0);
+                                   label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value >= value2 && value <= value3)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.LightGreen;
-                                    label_value.ForeColor = System.Drawing.Color.White;
+                                   label_value.BackColor = System.Drawing.Color.FromArgb(155,100 , 0);
+                                   label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 else if (value > value3 && value < value5)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.Yellow;
-                                    label_value.ForeColor = System.Drawing.Color.White;
+                                   label_value.BackColor = System.Drawing.Color.FromArgb(200,55 , 0);
+                                   label_value.ForeColor = System.Drawing.Color.White;
                                 }
 
                                 else if (value >= value5)
                                 {
-                                    label_value.BackColor = System.Drawing.Color.Red;
-                                    label_value.ForeColor = System.Drawing.Color.White;
+                                  label_value.BackColor = System.Drawing.Color.FromArgb(255,0 , 0);
+                                  label_value.ForeColor = System.Drawing.Color.White;
                                 }
                                 double danwei = (end_postion - start_position) / (end1 - start1);
                                 count2++;
@@ -522,14 +544,16 @@ namespace newwarningsystem
 
                                 label_value.Style["position"] = "absolute";
                                 label_value.Style["top"] = (start_position + count2 * danwei).ToString() + "px";
-                                label_value.Style["left"] = "60%";
-                                label_value.Text = position_string;
+                                label_value.Style["left"] = "59%";
+                                label_value.Style["width"] = "3px";
+                                label_value.Style["z-index"] = "15";
+                                //label_value.Text = position_string;
                                 label_value.Click += new EventHandler(Click);
 
                                 label_value.ToolTip = "位置:" + position_string + " 位移量:" + value.ToString();
 
                                 //this.form1.Controls.Add(label_position);
-                                this.Panel2.Controls.Add(label_value);
+                               // this.Panel2.Controls.Add(label_value);
                                 Label weizhi = new Label();
                                 weizhi.Style["position"] = "absolute";
                                 weizhi.Style["top"] = (table_rows * 9 + 1).ToString() + "%";
@@ -580,22 +604,22 @@ namespace newwarningsystem
 
                                     if (position >= 602 && position <= 675)
                                     {
-                                        labelposition.Text = "管道1";
+                                        labelposition.Text = "侧斜管1";
                                     }
 
                                     if (position >= 742 && position <= 810)
                                     {
-                                        labelposition.Text = "管道2";
+                                        labelposition.Text = "侧斜管2";
                                     }
 
                                     if (position >= 875 && position <= 939)
                                     {
-                                        labelposition.Text = "管道3";
+                                        labelposition.Text = "侧斜管3";
                                     }
 
                                     if (position >= 994 && position <= 1069)
                                     {
-                                        labelposition.Text = "管道4";
+                                        labelposition.Text = "侧斜管4";
                                     }
 
                                     labelposition.ForeColor = System.Drawing.Color.White;
@@ -665,7 +689,7 @@ namespace newwarningsystem
             if (level == 4)
             {
                 Label_baojingshuoming1.Text = "整体状况：报警";
-                Label_baojingshuoming1.ForeColor = System.Drawing.Color.Red;
+                Label_baojingshuoming1.ForeColor = System.Drawing.Color.FromArgb(255,0 , 0);
             }
             if (allcount != 0)
             {
@@ -742,11 +766,11 @@ namespace newwarningsystem
             //Chart_bingzhuangtu.Style["width"] = "200px";
             //Chart_bingzhuangtu.Style["height"] = "200px";
 
-            //Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.DarkBlue;
-            //Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.Blue;
-            //Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.LightGreen;
-            //Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.Yellow;
-            //Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.Red;
+            //Chart_bingzhuangtu.Series[0].Points[0].Color = System.Drawing.Color.FromArgb(0,255 , 0);
+            //Chart_bingzhuangtu.Series[0].Points[1].Color = System.Drawing.Color.FromArgb(100,155 , 0);
+            //Chart_bingzhuangtu.Series[0].Points[2].Color = System.Drawing.Color.FromArgb(155,100 , 0);
+            //Chart_bingzhuangtu.Series[0].Points[3].Color = System.Drawing.Color.FromArgb(200,55 , 0);
+            //Chart_bingzhuangtu.Series[0].Points[4].Color = System.Drawing.Color.FromArgb(255,0 , 0);
 
             //Chart_bingzhuangtu.Series[0].Points[0].Label = "无预警";
             //Chart_bingzhuangtu.Series[0].Points[1].Label = "蓝色预警";
@@ -756,9 +780,9 @@ namespace newwarningsystem
 
             //Chart_bingzhuangtu.Series[0].Points[0].LabelForeColor = System.Drawing.Color.White;
             //Chart_bingzhuangtu.Series[0].Points[1].LabelForeColor = System.Drawing.Color.White;
-            //Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.Blue;
-            //Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.Red;
-            //Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.Blue;
+            //Chart_bingzhuangtu.Series[0].Points[2].LabelForeColor = System.Drawing.Color.FromArgb(100,155 , 0);
+            //Chart_bingzhuangtu.Series[0].Points[3].LabelForeColor = System.Drawing.Color.FromArgb(255,0 , 0);
+            //Chart_bingzhuangtu.Series[0].Points[4].LabelForeColor = System.Drawing.Color.FromArgb(100,155 , 0);
             //for(int i=0;i<=4;i++)
             //{
             //    Chart_bingzhuangtu.Series[0].Points[i].LabelForeColor = System.Drawing.Color.White;
@@ -775,16 +799,29 @@ namespace newwarningsystem
             Label_label3.Text = "大于" + value2.ToString() + "mm 小于" + value5.ToString() + "mm";
             Label_label4.Text = "大于" + value5.ToString() + "mm";
 
-            if (Panel_Chart_Is == true)
-                Panel_chart.Visible = true;
-            if (Panel_Chart_Is == false)
-                Panel_chart.Visible = false;
+            //if (Panel_Chart_Is == true)
+            //    Panel_chart.Visible = true;
+            //if (Panel_Chart_Is == false)
+            //    Panel_chart.Visible = false;
+            Panel_chart.Visible = false;
 
             value1 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "1"));
             value2 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "2"));
             value3 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "3"));
             value4 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "4"));
             value5 = double.Parse(Set.set_yuzhi.IniReadValue("yuzhi", "5"));
+
+            panelbiaochi.Controls.Clear();
+            // 标尺
+            for(int i=0;i<(3500)/80*5;i++)
+            {
+                Label mylabel = new Label();
+                mylabel.Text = "--  "+(Math.Round(i * 0.2,1)).ToString() + "    M";
+                mylabel.Style["position"] = "absolute";
+                mylabel.Style["left"] = "0px";
+                mylabel.Style["top"] = (i * 80 / 5).ToString() + "px";
+                panelbiaochi.Controls.Add(mylabel);
+            }
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
@@ -806,31 +843,31 @@ namespace newwarningsystem
 
 
 
-            ListBox4.Items.Clear();
-            ListBox4.Items.Add("00:00-01:00");
-            ListBox4.Items.Add("01:00-02:00");
-            ListBox4.Items.Add("02:00-03:00");
-            ListBox4.Items.Add("03:00-04:00");
-            ListBox4.Items.Add("04:00-05:00");
-            ListBox4.Items.Add("05:00-06:00");
-            ListBox4.Items.Add("06:00-07:00");
-            ListBox4.Items.Add("07:00-08:00");
-            ListBox4.Items.Add("08:00-09:00");
-            ListBox4.Items.Add("09:00-10:00");
-            ListBox4.Items.Add("10:00-11:00");
-            ListBox4.Items.Add("11:00-12:00");
-            ListBox4.Items.Add("12:00-13:00");
-            ListBox4.Items.Add("13:00-14:00");
-            ListBox4.Items.Add("14:00-15:00");
-            ListBox4.Items.Add("15:00-16:00");
-            ListBox4.Items.Add("16:00-17:00");
-            ListBox4.Items.Add("17:00-18:00");
-            ListBox4.Items.Add("18:00-19:00");
-            ListBox4.Items.Add("19:00-20:00");
-            ListBox4.Items.Add("20:00-21:00");
-            ListBox4.Items.Add("21:00-22:00");
-            ListBox4.Items.Add("22:00-23:00");
-            ListBox4.Items.Add("23:00-23:59");
+            //ListBox4.Items.Clear();
+            //ListBox4.Items.Add("00:00-01:00");
+            //ListBox4.Items.Add("01:00-02:00");
+            //ListBox4.Items.Add("02:00-03:00");
+            //ListBox4.Items.Add("03:00-04:00");
+            //ListBox4.Items.Add("04:00-05:00");
+            //ListBox4.Items.Add("05:00-06:00");
+            //ListBox4.Items.Add("06:00-07:00");
+            //ListBox4.Items.Add("07:00-08:00");
+            //ListBox4.Items.Add("08:00-09:00");
+            //ListBox4.Items.Add("09:00-10:00");
+            //ListBox4.Items.Add("10:00-11:00");
+            //ListBox4.Items.Add("11:00-12:00");
+            //ListBox4.Items.Add("12:00-13:00");
+            //ListBox4.Items.Add("13:00-14:00");
+            //ListBox4.Items.Add("14:00-15:00");
+            //ListBox4.Items.Add("15:00-16:00");
+            //ListBox4.Items.Add("16:00-17:00");
+            //ListBox4.Items.Add("17:00-18:00");
+            //ListBox4.Items.Add("18:00-19:00");
+            //ListBox4.Items.Add("19:00-20:00");
+            //ListBox4.Items.Add("20:00-21:00");
+            //ListBox4.Items.Add("21:00-22:00");
+            //ListBox4.Items.Add("22:00-23:00");
+            //ListBox4.Items.Add("23:00-23:59");
 
             ReFlush_List();
             Set_Start_End(start1, end1, start2, end2);
@@ -838,6 +875,28 @@ namespace newwarningsystem
             {
                 //Chart_bingzhuangtu.Style["width"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
                 //Chart_bingzhuangtu.Style["height"] = (double.Parse(MainMap.x) * 0.17).ToString() + "px";
+            }
+            catch { }
+
+            try
+            {
+                if (IsPostBack == true)
+                {
+                    //if (DropDownList1.Text == "主页")
+                    //{
+                    //    Response.Redirect("MainMap.aspx");
+                    //}
+
+                    //if (DropDownList1.Text == "报表页")
+                    //{
+                    //    Response.Redirect("report.aspx");
+                    //}
+                    //if (DropDownList1.Text == "曲线查询页")
+                    //{
+                    //    Response.Redirect("Chart.aspx");
+                    //}
+                }
+
             }
             catch { }
         }
@@ -854,10 +913,10 @@ namespace newwarningsystem
             }
 
             ArrayList alldirs = FileCaozuo.Read_All_Dir("D:\\data\\");
-            ListBox3.Items.Clear();
+            //ListBox3.Items.Clear();
             foreach (DirectoryInfo info in alldirs)
             {
-                ListBox3.Items.Add(info.Name);
+              //  ListBox3.Items.Add(info.Name);
                 //Calendar1.day
             }
         }
@@ -1027,48 +1086,48 @@ namespace newwarningsystem
                 }
             }
 
-            listbox3_select = ListBox3.Items[ListBox3.SelectedIndex].Value.ToString();
+            //listbox3_select = ListBox3.Items[ListBox3.SelectedIndex].Value.ToString();
             // 查询一天的
             Chart2.Series[0].Points.Clear();
             try
             {
-                ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString(), "*.txt");
-                foreach (string file in filelist)
-                {
-                    try
-                    {
-                        ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString(), "*.txt");
+                //ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString(), "*.txt");
+                //foreach (string file in filelist)
+                //{
+                //    try
+                //    {
+                //        ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString(), "*.txt");
 
-                        string myline = FileCaozuo.Get_Line("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString() + "\\" + file, count - 1);
-                        string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
-                        double myvalue = double.Parse(myvalue_string);
-                        string time_string = string_caozuo.Get_Dian_String(file, 1);
-                        string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
-                        string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
-                        string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
-                        string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
-                        string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
-                        string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
-                        string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
-                        string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
-                        DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
+                //        string myline = FileCaozuo.Get_Line("D:\\data\\" + ListBox3.Items[ListBox3.SelectedIndex].Value.ToString() + "\\" + file, count - 1);
+                //        string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
+                //        double myvalue = double.Parse(myvalue_string);
+                //        string time_string = string_caozuo.Get_Dian_String(file, 1);
+                //        string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
+                //        string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
+                //        string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
+                //        string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
+                //        string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
+                //        string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
+                //        string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
+                //        string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
+                //        DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
 
-                        Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
-                        Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
-                        DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
-                        DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
-                        Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
-                        Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
-                        Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
-                        Chart2.ChartAreas[0].AxisX.Interval = 1;
-                        max = Chart2.ChartAreas[0].AxisX.Maximum;
-                        min = Chart2.ChartAreas[0].AxisX.Minimum;
-                        Label11.Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
-                    }
-                    catch { }
+                //        Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+                //        Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
+                //        DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
+                //        DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
+                //        Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
+                //        Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
+                //        Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
+                //        Chart2.ChartAreas[0].AxisX.Interval = 1;
+                //        max = Chart2.ChartAreas[0].AxisX.Maximum;
+                //        min = Chart2.ChartAreas[0].AxisX.Minimum;
+                //        Label11.Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
+                //    }
+                //    catch { }
 
 
-                }
+                //}
 
 
             }
@@ -1077,83 +1136,83 @@ namespace newwarningsystem
 
         protected void ListBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
+            //ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
-            // 读取第一个文件作为基准
-            string file_jizhun = (string)filelist_1[0];
-            string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
-            int count = 0;
-            double jizhun = 0;
-            string position_string = "";
-            // 寻找相应的索引
-            foreach (string line in jizhun_list)
-            {
-                position_string = string_caozuo.Get_Table_String(line, 1);
-                string postion_value_string = string_caozuo.Get_Table_String(line, 2);
-                double positon_value = double.Parse(postion_value_string);
-                double position = double.Parse(position_string);
-                count++;
-                if (position == click_value)
-                {
-                    jizhun = positon_value;
-                    break;
-                }
-            }
-
-
-            // 查询一天的
-            Chart2.Series[0].Points.Clear();
-            try
-            {
-                ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
-                foreach (string file in filelist)
-                {
-                    try
-                    {
-                        ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
-
-                        string myline = FileCaozuo.Get_Line("D:\\data\\" + listbox3_select + "\\" + file, count - 1);
-                        string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
-                        double myvalue = double.Parse(myvalue_string);
-                        string time_string = string_caozuo.Get_Dian_String(file, 1);
-                        string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
-                        string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
-                        string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
-                        string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
-                        string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
-                        string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
-                        string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
-                        string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
-                        DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
-
-                        string select_time = ListBox4.Items[ListBox4.SelectedIndex].Value.ToString();
-                        string start_time = string_caozuo.Get_HengGang_String(select_time, 1);
-                        string end_time = string_caozuo.Get_HengGang_String(select_time, 2);
-                        string start_hour = string_caozuo.Get_Maohao_String(start_time, 1);
-                        string start_min = string_caozuo.Get_Maohao_String(start_time, 2);
-                        string end_hour = string_caozuo.Get_Maohao_String(end_time, 1);
-                        string end_min = string_caozuo.Get_Maohao_String(end_time, 2);
-
-                        Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
-                        Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
-                        DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + start_hour + ":" + start_min + ":" + "00");
-                        DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + end_hour + ":" + end_min + ":" + "59");
-                        Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
-                        Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
-                        Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Minutes;
-                        Chart2.ChartAreas[0].AxisX.Interval = 5;
-                        max = Chart2.ChartAreas[0].AxisX.Maximum;
-                        min = Chart2.ChartAreas[0].AxisX.Minimum;
-                        Label11.Text = year + "年" + month + "月" + day + "日" + start_hour + "时-" + end_hour + "时" + "  位置:" + position_string + " 的趋势区线";
-                    }
-                    catch { }
+            //// 读取第一个文件作为基准
+            //string file_jizhun = (string)filelist_1[0];
+            //string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
+            //int count = 0;
+            //double jizhun = 0;
+            //string position_string = "";
+            //// 寻找相应的索引
+            //foreach (string line in jizhun_list)
+            //{
+            //    position_string = string_caozuo.Get_Table_String(line, 1);
+            //    string postion_value_string = string_caozuo.Get_Table_String(line, 2);
+            //    double positon_value = double.Parse(postion_value_string);
+            //    double position = double.Parse(position_string);
+            //    count++;
+            //    if (position == click_value)
+            //    {
+            //        jizhun = positon_value;
+            //        break;
+            //    }
+            //}
 
 
-                }
+            //// 查询一天的
+            //Chart2.Series[0].Points.Clear();
+            //try
+            //{
+            //    ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
+            //    foreach (string file in filelist)
+            //    {
+            //        try
+            //        {
+            //            ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
+
+            //            string myline = FileCaozuo.Get_Line("D:\\data\\" + listbox3_select + "\\" + file, count - 1);
+            //            string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
+            //            double myvalue = double.Parse(myvalue_string);
+            //            string time_string = string_caozuo.Get_Dian_String(file, 1);
+            //            string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
+            //            string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
+            //            string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
+            //            string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
+            //            string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
+            //            string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
+            //            string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
+            //            string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
+            //            DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
+
+            //            //string select_time = ListBox4.Items[ListBox4.SelectedIndex].Value.ToString();
+            //            //string start_time = string_caozuo.Get_HengGang_String(select_time, 1);
+            //           // string end_time = string_caozuo.Get_HengGang_String(select_time, 2);
+            //            //string start_hour = string_caozuo.Get_Maohao_String(start_time, 1);
+            //            //string start_min = string_caozuo.Get_Maohao_String(start_time, 2);
+            //            //string end_hour = string_caozuo.Get_Maohao_String(end_time, 1);
+            //            //string end_min = string_caozuo.Get_Maohao_String(end_time, 2);
+
+            //            Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+            //            Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
+            //            DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + start_hour + ":" + start_min + ":" + "00");
+            //            DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + end_hour + ":" + end_min + ":" + "59");
+            //            Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
+            //            Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
+            //            Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Minutes;
+            //            Chart2.ChartAreas[0].AxisX.Interval = 5;
+            //            max = Chart2.ChartAreas[0].AxisX.Maximum;
+            //            min = Chart2.ChartAreas[0].AxisX.Minimum;
+            //            Label11.Text = year + "年" + month + "月" + day + "日" + start_hour + "时-" + end_hour + "时" + "  位置:" + position_string + " 的趋势区线";
+            //        }
+            //        catch { }
 
 
-            }
-            catch { }
+            //    }
+
+
+            //}
+            //catch { }
         }
 
         protected void Calendar1_DayRender(object sender, DayRenderEventArgs e)
@@ -1173,95 +1232,95 @@ namespace newwarningsystem
 
         protected void Calendar1_DayRender1(object sender, DayRenderEventArgs e)
         {
-            for (int i = 0; i < ListBox3.Items.Count; i++)
-            {
-                string date = ListBox3.Items[i].Value.ToString();
-                string hour = string_caozuo.Get_Xiahuaxian_String(date, 1);
-                string min = string_caozuo.Get_Xiahuaxian_String(date, 2);
-                string sec = string_caozuo.Get_Xiahuaxian_String(date, 3);
-                //e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
-                if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
-                {
-                  //  e.Cell.ForeColor = System.Drawing.Color.LightGray;
-                }
+            //for (int i = 0; i < ListBox3.Items.Count; i++)
+            //{
+            //    string date = ListBox3.Items[i].Value.ToString();
+            //    string hour = string_caozuo.Get_Xiahuaxian_String(date, 1);
+            //    string min = string_caozuo.Get_Xiahuaxian_String(date, 2);
+            //    string sec = string_caozuo.Get_Xiahuaxian_String(date, 3);
+            //    //e.Day.IsSelectable = e.Day.Date == DateTime.Parse(hour + "-" + min + "-" + sec);
+            //    if (e.Day.Date != DateTime.Parse(hour + "-" + min + "-" + sec))
+            //    {
+            //      //  e.Cell.ForeColor = System.Drawing.Color.LightGray;
+            //    }
 
-            }
-            //if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
-            if (e.Day.IsSelected == true)
-            {
+            //}
+            ////if (Calendar1.SelectedDate == DateTime.Parse("1900-01-01")) return;
+            //if (e.Day.IsSelected == true)
+            //{
 
-                // 选择了某日
-                #region
-               // DateTime select_datetime = Calendar1.SelectedDate;
-                //string date_string = select_datetime.Year.ToString().PadLeft(4, '0') + "_" + select_datetime.Month.ToString().PadLeft(2, '0') + "_" + select_datetime.Day.ToString().PadLeft(2, '0');
+            //    // 选择了某日
+            //    #region
+            //   // DateTime select_datetime = Calendar1.SelectedDate;
+            //    //string date_string = select_datetime.Year.ToString().PadLeft(4, '0') + "_" + select_datetime.Month.ToString().PadLeft(2, '0') + "_" + select_datetime.Day.ToString().PadLeft(2, '0');
 
-                ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
+            //    ArrayList filelist_1 = FileCaozuo.Read_All_Files("D:\\data\\", "*.txt");
 
-                // 读取第一个文件作为基准
-                string file_jizhun = (string)filelist_1[0];
-                string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
-                int count = 0;
-                double jizhun = 0;
-                string position_string = "";
-                // 寻找相应的索引
-                foreach (string line in jizhun_list)
-                {
-                    position_string = string_caozuo.Get_Table_String(line, 1);
-                    string postion_value_string = string_caozuo.Get_Table_String(line, 2);
-                    double positon_value = double.Parse(postion_value_string);
-                    double position = double.Parse(position_string);
-                    count++;
-                    if (position == click_value)
-                    {
-                        jizhun = positon_value;
-                        break;
-                    }
-                }
+            //    // 读取第一个文件作为基准
+            //    string file_jizhun = (string)filelist_1[0];
+            //    string[] jizhun_list = FileCaozuo.Read_All_Line("D:\\data\\" + file_jizhun);
+            //    int count = 0;
+            //    double jizhun = 0;
+            //    string position_string = "";
+            //    // 寻找相应的索引
+            //    foreach (string line in jizhun_list)
+            //    {
+            //        position_string = string_caozuo.Get_Table_String(line, 1);
+            //        string postion_value_string = string_caozuo.Get_Table_String(line, 2);
+            //        double positon_value = double.Parse(postion_value_string);
+            //        double position = double.Parse(position_string);
+            //        count++;
+            //        if (position == click_value)
+            //        {
+            //            jizhun = positon_value;
+            //            break;
+            //        }
+            //    }
 
-                //listbox3_select = date_string;
-                // 查询一天的
-                Chart2.Series[0].Points.Clear();
-                try
-                {
-                    ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
-                    foreach (string file in filelist)
-                    {
-                        try
-                        {
-                            ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
+            //    //listbox3_select = date_string;
+            //    // 查询一天的
+            //    Chart2.Series[0].Points.Clear();
+            //    try
+            //    {
+            //        ArrayList filelist = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
+            //        foreach (string file in filelist)
+            //        {
+            //            try
+            //            {
+            //                ArrayList allfiles = FileCaozuo.Read_All_Files("D:\\data\\" + listbox3_select, "*.txt");
 
-                            string myline = FileCaozuo.Get_Line("D:\\data\\" + listbox3_select + "\\" + file, count - 1);
-                            string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
-                            double myvalue = double.Parse(myvalue_string);
-                            string time_string = string_caozuo.Get_Dian_String(file, 1);
-                            string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
-                            string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
-                            string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
-                            string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
-                            string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
-                            string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
-                            string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
-                            string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
-                            DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
+            //                string myline = FileCaozuo.Get_Line("D:\\data\\" + listbox3_select + "\\" + file, count - 1);
+            //                string myvalue_string = string_caozuo.Get_Table_String(myline, 2);
+            //                double myvalue = double.Parse(myvalue_string);
+            //                string time_string = string_caozuo.Get_Dian_String(file, 1);
+            //                string day_string = string_caozuo.Get_HengGang_String(time_string, 1);
+            //                string sub_time_string = string_caozuo.Get_HengGang_String(time_string, 2);
+            //                string year = string_caozuo.Get_Xiahuaxian_String(day_string, 1);
+            //                string month = string_caozuo.Get_Xiahuaxian_String(day_string, 2);
+            //                string day = string_caozuo.Get_Xiahuaxian_String(day_string, 3);
+            //                string hour = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 1);
+            //                string min1 = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 2);
+            //                string sec = string_caozuo.Get_Xiahuaxian_String(sub_time_string, 3);
+            //                DateTime time = DateTime.Parse(year + "-" + month + "-" + day + " " + hour + ":" + min1 + ":" + sec);
 
-                            Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
-                            Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
-                            DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
-                            DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
-                            Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
-                            Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
-                            Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
-                            Chart2.ChartAreas[0].AxisX.Interval = 1;
-                            max = Chart2.ChartAreas[0].AxisX.Maximum;
-                            min = Chart2.ChartAreas[0].AxisX.Minimum;
-                            Chart2.Titles[0].Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
-                        }
-                        catch { }
-                    }
-                }
-                catch { }
-                #endregion
-            }
+            //                Chart2.Series[0].Points.AddXY(time.ToOADate(), Math.Abs(jizhun - myvalue) * (1 - Math.Sqrt(3) / 2) / 0.0482);
+            //                Chart2.ChartAreas[0].AxisX.LabelStyle.Format = "HH:mm:ss";
+            //                DateTime time1 = DateTime.Parse(year + "-" + month + "-" + day + " " + "00" + ":" + "00" + ":" + "00");
+            //                DateTime time2 = DateTime.Parse(year + "-" + month + "-" + day + " " + "23" + ":" + "59" + ":" + "59");
+            //                Chart2.ChartAreas[0].AxisX.Minimum = time1.ToOADate();
+            //                Chart2.ChartAreas[0].AxisX.Maximum = time2.ToOADate();
+            //                Chart2.ChartAreas[0].AxisX.IntervalType = System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Hours;
+            //                Chart2.ChartAreas[0].AxisX.Interval = 1;
+            //                max = Chart2.ChartAreas[0].AxisX.Maximum;
+            //                min = Chart2.ChartAreas[0].AxisX.Minimum;
+            //                Chart2.Titles[0].Text = year + "年" + month + "月" + day + "日  位置:" + position_string + " 的趋势区线";
+            //            }
+            //            catch { }
+            //        }
+            //    }
+            //    catch { }
+            //    #endregion
+            //}
         }
 
         protected void ImageButton_home_Click(object sender, ImageClickEventArgs e)
@@ -1298,6 +1357,21 @@ namespace newwarningsystem
         protected void Image_baojing_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("report.aspx");
+        }
+
+        protected void ImageButton_zhuye_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("MainMap.aspx");
+        }
+
+        protected void ImageButton_baobiao_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("report.aspx");
+        }
+
+        protected void ImageButton_chaxun_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Chart.aspx");
         }
     }
 }

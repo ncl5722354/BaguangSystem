@@ -23,7 +23,7 @@ namespace Communication
         TcpClient client = new TcpClient();
         public IPAddress ServerIp;
         int ServerPort;
-        public byte[] receive_byte = new byte[8192];
+        public byte[] receive_byte = new byte[8192*10];
         public int receive_num;
 
         // 事件
@@ -121,6 +121,7 @@ namespace Communication
                 if(client.Client.Connected==true)
                 {
                     client.Client.Send(send_byte);
+                    
                 }
             }
             catch

@@ -61,15 +61,48 @@
   <ItemGroup>
     <Content Include="ChaFenSearch.aspx" />
     <Content Include="Chart.aspx" />
+    <Content Include="chart\dist\Chart.bundle.js" />
+    <Content Include="chart\dist\Chart.bundle.min.js" />
+    <Content Include="chart\dist\Chart.css" />
+    <Content Include="chart\dist\Chart.js" />
+    <Content Include="chart\dist\Chart.min.css" />
+    <Content Include="chart\dist\Chart.min.js" />
+    <Content Include="datapicket\css\datepicker.css" />
+    <Content Include="datapicket\index.html" />
+    <Content Include="datapicket\js\datapicker-separate\api.js" />
+    <Content Include="datapicket\js\datapicker-separate\datepicker-only-time.js" />
+    <Content Include="datapicket\js\datapicker-separate\datepicker.js" />
+    <Content Include="datapicket\js\datapicker-separate\day.js" />
+    <Content Include="datapicket\js\datapicker-separate\month.js" />
+    <Content Include="datapicket\js\datapicker-separate\time-only-time.js" />
+    <Content Include="datapicket\js\datapicker-separate\time.js" />
+    <Content Include="datapicket\js\datapicker-separate\year.js" />
+    <Content Include="datapicket\js\datepicker.all.js" />
+    <Content Include="datapicket\js\datepicker.all.min.js" />
+    <Content Include="datapicket\js\datepicker.en.js" />
+    <Content Include="JQuery.js" />
     <Content Include="Login.aspx" />
     <Content Include="MainMap.aspx" />
     <Content Include="report.aspx" />
     <Content Include="Resource\1.png" />
+    <Content Include="Resource\1号坡道区域.wav" />
+    <Content Include="Resource\1测.wav" />
     <Content Include="Resource\2.png" />
+    <Content Include="Resource\2号坡道区域.wav" />
+    <Content Include="Resource\2坡中.wav" />
+    <Content Include="Resource\2坡顶.wav" />
+    <Content Include="Resource\2测.wav" />
     <Content Include="Resource\3.png" />
+    <Content Include="Resource\3号坡道区域.wav" />
+    <Content Include="Resource\3坡.wav" />
+    <Content Include="Resource\3测.wav" />
+    <Content Include="Resource\4测.wav" />
+    <Content Include="Resource\arrow_back_left_navigation_previous_64px_1225467_easyicon.net.png" />
+    <Content Include="Resource\arrow_forward_navigation_next_right_64px_1225491_easyicon.net.png" />
     <Content Include="Resource\attention.png" />
     <Content Include="Resource\bg.png" />
     <Content Include="Resource\bluedot.ico" />
+    <Content Include="Resource\Chart.min.js" />
     <Content Include="Resource\dise.png" />
     <Content Include="Resource\dotgreen.png" />
     <Content Include="Resource\find_magnifier_magnifying_glass_search_zoom_64px_1225492_easyicon.net.png" />
@@ -78,6 +111,7 @@
     <Content Include="Resource\home_29.1328px_1217329_easyicon.net.png" />
     <Content Include="Resource\loginbg.png" />
     <Content Include="Resource\login_over.png" />
+    <Content Include="Resource\LOGO.png" />
     <Content Include="Resource\map.png" />
     <Content Include="Resource\minibg.png" />
     <Content Include="Resource\p1.png" />
@@ -91,18 +125,53 @@
     <Content Include="Resource\settings.png" />
     <Content Include="Resource\settings_64px_1228852_easyicon.net.png" />
     <Content Include="Resource\settings_64px_1229386_easyicon.net.png" />
+    <Content Include="Resource\Sound_off.png" />
+    <Content Include="Resource\Sound_on.png" />
     <Content Include="Resource\timg.jpg" />
     <Content Include="Resource\u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg" />
-    <Content Include="Resource\zhu_di.png" />
-    <Content Include="Resource\zhu_shen.png" />
-    <Content Include="Resource\zhu_tou.png" />
-    <Content Include="Resource\图片1.png" />
-    <Content Include="Resource\图片2.png" />
+    <Content Include="Resource\zhi10.png" />
+    <Content Include="Resource\zhu1.png" />
+    <Content Include="Resource\zhu10.png" />
+    <Content Include="Resource\zhu11.png" />
+    <Content Include="Resource\zhu12.png" />
+    <Content Include="Resource\zhu13.png" />
+    <Content Include="Resource\zhu14.png" />
+    <Content Include="Resource\zhu15.png" />
+    <Content Include="Resource\zhu16.png" />
+    <Content Include="Resource\zhu2.png" />
+    <Content Include="Resource\zhu3.png" />
+    <Content Include="Resource\zhu4.png" />
+    <Content Include="Resource\zhu5.png" />
+    <Content Include="Resource\zhu6.png" />
+    <Content Include="Resource\zhu7.png" />
+    <Content Include="Resource\zhu8.png" />
+    <Content Include="Resource\zhu9.png" />
+    <Content Include="Resource\zhu_di.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\zhu_shen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\zhu_tou.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\zoom_in_64px_1231412_easyicon.net.png" />
+    <Content Include="Resource\zoom_out_64px_1231417_easyicon.net.png" />
+    <Content Include="Resource\上侧背景条1.png" />
+    <Content Include="Resource\主页.png" />
+    <Content Include="Resource\刷新.png" />
     <Content Include="Resource\图片3.png" />
     <Content Include="Resource\图片4.png" />
+    <Content Include="Resource\地图.png" />
+    <Content Include="Resource\地图1.png" />
+    <Content Include="Resource\坝光收费站边坡健康监测系统-文字效果.png" />
     <Content Include="Resource\微信截图_20190622132618.png" />
+    <Content Include="Resource\报表.png" />
+    <Content Include="Resource\查询.png" />
+    <Content Include="Resource\设置.png" />
     <Content Include="Set.aspx" />
     <Content Include="SubMap.aspx" />
+    <Content Include="userpassword.aspx" />
     <Content Include="Web.config" />
     <Content Include="zhuziview.aspx" />
   </ItemGroup>
@@ -157,6 +226,13 @@
     <Compile Include="SubMap.aspx.designer.cs">
       <DependentUpon>SubMap.aspx</DependentUpon>
     </Compile>
+    <Compile Include="userpassword.aspx.cs">
+      <DependentUpon>userpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userpassword.aspx.designer.cs">
+      <DependentUpon>userpassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="zhuziview.aspx.cs">
       <DependentUpon>zhuziview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -166,9 +242,24 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chart\bower.json" />
+    <Content Include="chart\composer.json" />
+    <Content Include="chart\LICENSE.md" />
+    <Content Include="chart\package.json" />
+    <Content Include="chart\README.md" />
     <None Include="Properties\PublishProfiles\newweb.pubxml">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Resource\1测.ogg" />
+    <Content Include="Resource\2坡中.ogg" />
+    <Content Include="Resource\2坡顶.ogg" />
+    <Content Include="Resource\2测.ogg" />
+    <Content Include="Resource\3坡.ogg" />
+    <Content Include="Resource\3测.ogg" />
+    <Content Include="Resource\4测.ogg" />
+    <Content Include="Resource\1号坡道区域.ogg" />
+    <Content Include="Resource\2号坡道区域.ogg" />
+    <Content Include="Resource\3号坡道区域.ogg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -181,11 +272,16 @@
       <Project>{9ed43ee0-8a99-4c7d-bbac-464573da4dd9}</Project>
       <Name>FileOperation</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SqlConnect\SqlConnect\SqlConnect.csproj">
+      <Project>{a220dcc6-9e02-4060-818e-1d71c24570ca}</Project>
+      <Name>SqlConnect</Name>
+    </ProjectReference>
     <ProjectReference Include="..\String_Caozuo\String_Caozuo.csproj">
       <Project>{200df22a-670b-410b-9887-4d43abf185f9}</Project>
       <Name>String_Caozuo</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

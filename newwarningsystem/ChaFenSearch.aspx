@@ -120,14 +120,6 @@
             z-index: 4;
             height:5%;
         }
-         .auto-style84 {
-            position: absolute;
-            top: 0px;
-            left: 20%;
-            width: 40%;
-            z-index: 5;
-            height:5%;
-        }
          .auto-style95 {
             position: absolute;
             top: 5%;
@@ -136,6 +128,26 @@
             z-index: 7;
             height:5%;
         }
+        .auto-style4 {
+            position: absolute;
+            top: 1%;
+            left: 40%;
+            z-index: 4;
+            width: 100%;
+            height: 4%;
+            margin-right: 0px;
+        }
+
+        .auto-style100 {
+            position: absolute;
+            top: 1%;
+            left: 40%;
+            z-index: 4;
+            width: 100%;
+            height: 4%;
+            margin-right: 0px;
+        }
+
         </style>
 </head>
 <body style="height: 632px">
@@ -144,8 +156,6 @@
        
         <asp:Image ID="Image2" CssClass="auto-style68" BackColor="DarkBlue" runat="server" ImageUrl="~/Resource/图片1.png" />
     
-        <asp:Image ID="Image_title" CssClass="auto-style84"  runat="server" ImageUrl="~/Resource/图片3.png"  />
-
         <asp:Label ID="Label_select1" CssClass="auto-style69" runat="server" Text="" ForeColor="White"></asp:Label>
         <asp:Label ID="Label_select2" CssClass="auto-style70" runat="server" Text="" ForeColor="White"></asp:Label>
        
@@ -154,7 +164,7 @@
 
         <asp:Image ID="Image_icon" CssClass="auto-style83" runat="server"  ImageUrl="~/Resource/图片2.png" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" />
 
-        <asp:Image ID="Image1" runat="server"  CssClass="auto-style67" ImageUrl="~/Resource/u=1497079183,493793446&amp;fm=26&amp;gp=0.jpg"/>
+        <asp:Label ID="Label_title" runat="server" CssClass="auto-style100" Text="坝光收费站边坡健康监测系统" Font-Names="黑体" Font-Size="15pt" ForeColor="White"></asp:Label>
         <asp:Chart ID="Chart1" runat="server" CssClass="auto-style44">
             <series>
                 <asp:Series ChartType="Spline" Name="曲线1" Color="Red">

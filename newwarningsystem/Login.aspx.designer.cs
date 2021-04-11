@@ -49,13 +49,13 @@ namespace newwarningsystem {
         protected global::System.Web.UI.WebControls.TextBox TextBox_password;
         
         /// <summary>
-        /// Button_ok 控件。
+        /// btn_ok 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button_ok;
+        protected global::System.Web.UI.HtmlControls.HtmlInputButton btn_ok;
         
         /// <summary>
         /// Label_error 控件。

@@ -106,3 +106,8 @@ D:\warningsystem\ViewConfig\bin\Debug\ViewConfig.pdb
 D:\warningsystem\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
 D:\warningsystem\ViewConfig\obj\Debug\ViewConfig.dll
 D:\warningsystem\ViewConfig\obj\Debug\ViewConfig.pdb
+D:\程序\深圳项目\WarningSystem-master\ViewConfig\bin\Debug\ViewConfig.dll
+D:\程序\深圳项目\WarningSystem-master\ViewConfig\bin\Debug\ViewConfig.pdb
+D:\程序\深圳项目\WarningSystem-master\ViewConfig\obj\Debug\ViewConfig.csprojResolveAssemblyReference.cache
+D:\程序\深圳项目\WarningSystem-master\ViewConfig\obj\Debug\ViewConfig.dll
+D:\程序\深圳项目\WarningSystem-master\ViewConfig\obj\Debug\ViewConfig.pdb

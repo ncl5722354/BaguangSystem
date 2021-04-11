@@ -68,7 +68,7 @@ namespace SqlConnect
             }
         }
 
-        
+       
 
         // 查找表格
         public DataTable Select_Table(string table_name,string where_condition="",string[] cols=null)

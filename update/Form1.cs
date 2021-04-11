@@ -73,7 +73,7 @@ namespace update
 
                 string name = (string)list[i];
                 string filename = string_caozuo.Get_Dian_String(name, 1);
-                builder.Create_Table("data" + string_caozuo.Get_HengGang_String(filename, 1) + string_caozuo.Get_HengGang_String(filename, 2), create_cmd);
+                builder.Create_Table("data" + string_caozuo.Get_HengGang_String(filename, 1), create_cmd);
 
                 wenjian = i;
                 wenjianzong = list.Count;
@@ -102,7 +102,7 @@ namespace update
                         string[] insert_cmd = new string[2];
                         insert_cmd[0] = pos;
                         insert_cmd[1] = value;
-                        bool result=  builder.Insert("data"+string_caozuo.Get_HengGang_String(filename,1)+string_caozuo.Get_HengGang_String(filename,2),insert_cmd);
+                        bool result=  builder.Insert("data"+string_caozuo.Get_HengGang_String(filename,1),insert_cmd);
                     }
                     catch { }
                 }
