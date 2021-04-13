@@ -576,11 +576,11 @@
     {
         var qushi_num = new Number(qushi);
 
-        if (qushi <= 0.1)
+        if (qushi <= 0.3)
             label.textContent = posname + " 月变化:" + qushi_num.toFixed(3).toString() + " 变化平稳";
-        else if(qushi>0.1 && qushi<0.3)
+        else if(qushi>0.3 && qushi<0.9)
             label.textContent = posname + " 月变化:" + qushi_num.toFixed(3).toString() + " 变化明显";
-        else if(qushi>0.3)
+        else if(qushi>0.9)
             label.textContent = posname + " 月变化:" + qushi_num.toFixed(3).toString() + " 变化过大";
     }
 

@@ -105,3 +105,8 @@ D:\nichenglong\huizhou1\huizhou_newsystem\SqlConnect\SqlConnect\bin\Debug\SqlCon
 D:\nichenglong\huizhou1\huizhou_newsystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
 D:\nichenglong\huizhou1\huizhou_newsystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
 D:\nichenglong\huizhou1\huizhou_newsystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\bin\Debug\SqlConnect.dll
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\bin\Debug\SqlConnect.pdb
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.dll
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\obj\Debug\SqlConnect.pdb

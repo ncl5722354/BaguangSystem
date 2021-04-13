@@ -7,3 +7,8 @@ D:\nichenglong\huizhou1\huizhou_newsystem\SqlConnect\SqlConnect\bin\Release\SqlC
 D:\nichenglong\huizhou1\huizhou_newsystem\SqlConnect\SqlConnect\obj\Release\SqlConnect.csprojResolveAssemblyReference.cache
 D:\nichenglong\huizhou1\huizhou_newsystem\SqlConnect\SqlConnect\obj\Release\SqlConnect.dll
 D:\nichenglong\huizhou1\huizhou_newsystem\SqlConnect\SqlConnect\obj\Release\SqlConnect.pdb
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\bin\Release\SqlConnect.dll
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\bin\Release\SqlConnect.pdb
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\obj\Release\SqlConnect.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\obj\Release\SqlConnect.dll
+E:\程序\坝光后台\BaguangSystem\SqlConnect\SqlConnect\obj\Release\SqlConnect.pdb

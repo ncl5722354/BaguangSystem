@@ -171,3 +171,9 @@ D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\obj\Debug\FileOperation.
 D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
 D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\obj\Debug\FileOperation.dll
 D:\nichenglong\huizhou1\huizhou_newsystem\FileOperation\obj\Debug\FileOperation.pdb
+E:\程序\坝光后台\BaguangSystem\FileOperation\bin\Debug\FileOperation.dll
+E:\程序\坝光后台\BaguangSystem\FileOperation\bin\Debug\FileOperation.pdb
+E:\程序\坝光后台\BaguangSystem\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+E:\程序\坝光后台\BaguangSystem\FileOperation\obj\Debug\FileOperation.dll
+E:\程序\坝光后台\BaguangSystem\FileOperation\obj\Debug\FileOperation.pdb

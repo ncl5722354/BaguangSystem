@@ -15,3 +15,8 @@ D:\nichenglong\huizhou1\huizhou_newsystem\String_Caozuo\bin\Release\String_Caozu
 D:\nichenglong\huizhou1\huizhou_newsystem\String_Caozuo\obj\Release\String_Caozuo.dll
 D:\nichenglong\huizhou1\huizhou_newsystem\String_Caozuo\obj\Release\String_Caozuo.pdb
 D:\nichenglong\huizhou1\huizhou_newsystem\String_Caozuo\obj\Release\String_Caozuo.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\String_Caozuo\bin\Release\String_Caozuo.dll
+E:\程序\坝光后台\BaguangSystem\String_Caozuo\bin\Release\String_Caozuo.pdb
+E:\程序\坝光后台\BaguangSystem\String_Caozuo\obj\Release\String_Caozuo.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\String_Caozuo\obj\Release\String_Caozuo.dll
+E:\程序\坝光后台\BaguangSystem\String_Caozuo\obj\Release\String_Caozuo.pdb

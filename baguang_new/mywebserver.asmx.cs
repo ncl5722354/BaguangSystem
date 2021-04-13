@@ -1046,6 +1046,395 @@ namespace baguang_new
                 qushi7.posname = "4号测斜管";
                 qushi7.qushi = max7.ToString();
 
+                if (max1 <= 0.3)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "1号坡道趋势";
+                        insert_cmd[1] = "趋势平稳";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势平稳'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='1号坡道趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max1 > 0.3 && max1 < 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "1号坡道趋势";
+                        insert_cmd[1] = "趋势明显";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势明显'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='1号坡道趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if(max1>=0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "1号坡道趋势";
+                        insert_cmd[1] = "趋势过大";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势过大'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='1号坡道趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+
+                if (max2 <= 0.3)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "2号坡道趋势";
+                        insert_cmd[1] = "趋势平稳";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势平稳'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='2号坡道趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max2 > 0.3 && max2 < 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "2号坡道趋势";
+                        insert_cmd[1] = "趋势明显";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势明显'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='2号坡道趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max2 >= 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "2号坡道趋势";
+                        insert_cmd[1] = "趋势过大";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势过大'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='2号坡道趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+
+                if (max3 <= 0.3)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "3号坡道趋势";
+                        insert_cmd[1] = "趋势平稳";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势平稳'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='3号坡道趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max3 > 0.3 && max3 < 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "3号坡道趋势";
+                        insert_cmd[1] = "趋势明显";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势明显'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='3号坡道趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max3 >= 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "3号坡道趋势";
+                        insert_cmd[1] = "趋势过大";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势过大'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='3号坡道趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+
+                if (max4 <= 0.3)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "1号侧斜管趋势";
+                        insert_cmd[1] = "趋势平稳";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势平稳'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='1号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max4 > 0.3 && max4 < 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "1号侧斜管趋势";
+                        insert_cmd[1] = "趋势明显";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势明显'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='1号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max4 >= 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "1号侧斜管趋势";
+                        insert_cmd[1] = "趋势过大";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势过大'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='1号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+
+
+                if (max5 <= 0.3)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "2号侧斜管趋势";
+                        insert_cmd[1] = "趋势平稳";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势平稳'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='2号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max5 > 0.3 && max5 < 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "2号侧斜管趋势";
+                        insert_cmd[1] = "趋势明显";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势明显'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='2号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max5>= 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "2号侧斜管趋势";
+                        insert_cmd[1] = "趋势过大";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势过大'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='2号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+
+                if (max6 <= 0.3)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "3号侧斜管趋势";
+                        insert_cmd[1] = "趋势平稳";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势平稳'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='3号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max6 > 0.3 && max6 < 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "3号侧斜管趋势";
+                        insert_cmd[1] = "趋势明显";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势明显'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='3号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max6 >= 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "3号侧斜管趋势";
+                        insert_cmd[1] = "趋势过大";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势过大'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='3号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+
+                if (max7 <= 0.3)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "4号侧斜管趋势";
+                        insert_cmd[1] = "趋势平稳";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势平稳'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='4号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max7 > 0.3 && max7 < 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "4号侧斜管趋势";
+                        insert_cmd[1] = "趋势明显";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势明显'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='4号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+                else if (max7 >= 0.9)
+                {
+                    try
+                    {
+                        string[] insert_cmd = new string[3];
+                        insert_cmd[0] = "4号侧斜管趋势";
+                        insert_cmd[1] = "趋势过大";
+                        insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                        Global.builder.Insert("baguangdata", insert_cmd);
+
+
+                        string[] update_cmd = new string[2];
+                        update_cmd[0] = "status='趋势过大'";
+                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                        Global.builder.Updata("baguangdata", "podaoname='4号侧斜管趋势'", update_cmd);
+                    }
+                    catch { }
+                }
+
+
+
+
                 list.Add(qushi1);
                 list.Add(qushi2);
                 list.Add(qushi3);
