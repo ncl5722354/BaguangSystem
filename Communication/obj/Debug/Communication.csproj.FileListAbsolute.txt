@@ -197,3 +197,12 @@ D:\nichenglong\huizhou1\huizhou_newsystem\Communication\obj\Debug\Communication.
 D:\nichenglong\huizhou1\huizhou_newsystem\Communication\obj\Debug\Communication.dll
 D:\nichenglong\huizhou1\huizhou_newsystem\Communication\obj\Debug\Communication.pdb
 D:\nichenglong\huizhou1\huizhou_newsystem\Communication\bin\Debug\Communication.tlb
+E:\程序\坝光后台\BaguangSystem\Communication\bin\Debug\Communication.dll.config
+E:\程序\坝光后台\BaguangSystem\Communication\bin\Debug\Communication.dll
+E:\程序\坝光后台\BaguangSystem\Communication\bin\Debug\Communication.pdb
+E:\程序\坝光后台\BaguangSystem\Communication\bin\Debug\Communication.tlb
+E:\程序\坝光后台\BaguangSystem\Communication\bin\Debug\String_Caozuo.dll
+E:\程序\坝光后台\BaguangSystem\Communication\bin\Debug\String_Caozuo.pdb
+E:\程序\坝光后台\BaguangSystem\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\Communication\obj\Debug\Communication.dll
+E:\程序\坝光后台\BaguangSystem\Communication\obj\Debug\Communication.pdb

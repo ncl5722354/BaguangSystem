@@ -1,0 +1,13 @@
+E:\程序\坝光后台\BaguangSystem\phonemessage\bin\Debug\phonemessage.exe.config
+E:\程序\坝光后台\BaguangSystem\phonemessage\bin\Debug\phonemessage.exe
+E:\程序\坝光后台\BaguangSystem\phonemessage\bin\Debug\phonemessage.pdb
+E:\程序\坝光后台\BaguangSystem\phonemessage\bin\Debug\FileOperation.dll
+E:\程序\坝光后台\BaguangSystem\phonemessage\bin\Debug\FileOperation.pdb
+E:\程序\坝光后台\BaguangSystem\phonemessage\obj\Debug\phonemessage.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\phonemessage\obj\Debug\phonemessage.Form1.resources
+E:\程序\坝光后台\BaguangSystem\phonemessage\obj\Debug\phonemessage.Properties.Resources.resources
+E:\程序\坝光后台\BaguangSystem\phonemessage\obj\Debug\phonemessage.csproj.GenerateResource.Cache
+E:\程序\坝光后台\BaguangSystem\phonemessage\obj\Debug\phonemessage.exe
+E:\程序\坝光后台\BaguangSystem\phonemessage\obj\Debug\phonemessage.pdb
+E:\程序\坝光后台\BaguangSystem\phonemessage\bin\Debug\SqlConnect.dll
+E:\程序\坝光后台\BaguangSystem\phonemessage\bin\Debug\SqlConnect.pdb

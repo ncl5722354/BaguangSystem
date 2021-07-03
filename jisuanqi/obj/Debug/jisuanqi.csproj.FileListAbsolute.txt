@@ -63,3 +63,14 @@ D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.Properties.Resources.resources
 D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.csproj.GenerateResource.Cache
 D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.exe
 D:\warningsystem\jisuanqi\obj\Debug\jisuanqi.pdb
+E:\程序\坝光后台\BaguangSystem\jisuanqi\bin\Debug\jisuanqi.exe.config
+E:\程序\坝光后台\BaguangSystem\jisuanqi\bin\Debug\jisuanqi.exe
+E:\程序\坝光后台\BaguangSystem\jisuanqi\bin\Debug\jisuanqi.pdb
+E:\程序\坝光后台\BaguangSystem\jisuanqi\bin\Debug\ViewConfig.dll
+E:\程序\坝光后台\BaguangSystem\jisuanqi\bin\Debug\ViewConfig.pdb
+E:\程序\坝光后台\BaguangSystem\jisuanqi\obj\Debug\jisuanqi.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\jisuanqi\obj\Debug\jisuanqi.Form1.resources
+E:\程序\坝光后台\BaguangSystem\jisuanqi\obj\Debug\jisuanqi.Properties.Resources.resources
+E:\程序\坝光后台\BaguangSystem\jisuanqi\obj\Debug\jisuanqi.csproj.GenerateResource.Cache
+E:\程序\坝光后台\BaguangSystem\jisuanqi\obj\Debug\jisuanqi.exe
+E:\程序\坝光后台\BaguangSystem\jisuanqi\obj\Debug\jisuanqi.pdb

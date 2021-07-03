@@ -134,6 +134,49 @@ namespace SqlConnect
             }
         }           // 查询
 
+
+        public DataTable Select_SQL(string sql)
+        {
+            using (SqlConnection conn = new SqlConnection(connStr.ConnectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = conn;
+                string select_cmd = sql;
+                cmd.CommandText = select_cmd;
+                SqlDataReader sqldatareader;
+                try
+                {
+                    sqldatareader = cmd.ExecuteReader(); // 在这里进行数据库操作，并将查找的返回值给特定的数据类型 sqldatareader
+                }
+                catch { return null; }
+                DataTable dt = new DataTable();                    // 新建一个datatable，下面用一个循环将sqldatareader中的值给datatable,然后返回此表，就可以了
+
+                if (sqldatareader != null && sqldatareader.HasRows == true)
+                {
+                    for (int i = 0; i < sqldatareader.FieldCount; i++)
+                    {
+                        dt.Columns.Add(i.ToString());
+                    }
+                    // sqldatareader可读
+                    while (sqldatareader.Read())
+                    {
+                        DataRow dr = dt.NewRow();
+                        for (int i = 0; i < sqldatareader.FieldCount; i++)
+                        {
+                            dr[i] = sqldatareader.GetValue(i).ToString();
+                        }
+                        dt.Rows.Add(dr);
+                    }
+
+                }
+                sqldatareader.Close();
+                conn.Close();
+                return dt;
+            }
+
+        }
+
         
         public bool Insert_Array(string table_name,ArrayList insert_info)
         {

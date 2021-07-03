@@ -1003,6 +1003,7 @@
             title: '近一个月的应变趋势'
         });
 
+        
     }
 
     
@@ -1075,6 +1076,7 @@
     // 日期控件展示这一个月有多少天
     function Riqi_Kongjian_Show_Days(kongjian_name,kongjian_xiala_name,biaoname,chart_name,canvase_name,input_name,select_name)
     {
+
 
         var data_kongjian = document.getElementById(kongjian_name);
         var nowtime;

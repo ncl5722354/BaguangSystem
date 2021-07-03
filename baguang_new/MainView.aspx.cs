@@ -24,6 +24,8 @@ namespace baguang_new
         public static string guandao3_status;
         public static string guandao4_status;
 
+        int count = 0;
+
 
         public static IniFile ini = new IniFile("E://config.ini");
 
@@ -87,7 +89,7 @@ namespace baguang_new
         public static ArrayList all_Value = new ArrayList();     // 保存所有的值
         public static ArrayList all_xianlan = new ArrayList();   // 保存所有的线缆
         
-        public static string data_path = "D:\\data\\";                          // 保存所有的数据
+        public static string data_path = "D:\\坝光data\\";                          // 保存所有的数据
 
         public static double yuzhi = 2;
 
@@ -475,6 +477,8 @@ namespace baguang_new
             catch { }
 
             // 画面线缆的变化
+            count=count+100;
+            if (count >= 2000) count = 0;
             Update_Pos_Panel((Xianlan_Max_Min)all_xianlan[0], circle1);
             Update_Pos_Panel((Xianlan_Max_Min)all_xianlan[1], circle2);
             Update_Pos_Panel((Xianlan_Max_Min)all_xianlan[2], circle3);
@@ -487,6 +491,7 @@ namespace baguang_new
 
         private void Update_Pos_Panel(Xianlan_Max_Min xianlan_min_max,Panel pos_panel)
         {
+           
             Update_Level(xianlan_min_max, pos_panel, level1);
             Update_Level(xianlan_min_max, pos_panel, level2);
             Update_Level(xianlan_min_max, pos_panel, level3);
@@ -509,6 +514,8 @@ namespace baguang_new
         private void Update_Level(Xianlan_Max_Min xianlan_min_max,Panel pos_panel,Level level)
         {
 
+
+           
             // 如果是最小值
             if(level.max_is==false && level.min_is==true)
             {
@@ -531,13 +538,16 @@ namespace baguang_new
                                     insert_cmd[0] = "1号坡道状态";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+                                    //if(count==1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='1号坡道状态'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='1号坡道状态'", update_cmd);
                                 }
                                 catch { }
 
@@ -552,14 +562,16 @@ namespace baguang_new
                                     insert_cmd[0] = "2号坡道状态";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                 //   if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='2号坡道状态'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //    Global.builder.Updata("baguangdata", "podaoname='2号坡道状态'", update_cmd);
                                 }
                                 catch { }
 
@@ -574,12 +586,14 @@ namespace baguang_new
                                     insert_cmd[0] = "3号坡道状态";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                    //if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='3号坡道状态'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='3号坡道状态'", update_cmd);
                                 }
                                 catch { }
 
@@ -591,16 +605,18 @@ namespace baguang_new
                                 try
                                 {
                                     string[] insert_cmd = new string[3];
-                                    insert_cmd[0] = "1号测斜管";
+                                    insert_cmd[0] = "1号侧斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                   // if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='1号测斜管'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='1号侧斜管'", update_cmd);
                                 }
                                 catch { }
 
@@ -610,15 +626,17 @@ namespace baguang_new
                                 try
                                 {
                                     string[] insert_cmd = new string[3];
-                                    insert_cmd[0] = "2号测斜管";
+                                    insert_cmd[0] = "2号侧斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                   // if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='2号测斜管'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='2号侧斜管'", update_cmd);
                                 }
                                 catch { }
 
@@ -628,16 +646,18 @@ namespace baguang_new
                                 try
                                 {
                                     string[] insert_cmd = new string[3];
-                                    insert_cmd[0] = "3号测斜管";
+                                    insert_cmd[0] = "3号侧斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                    //if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='3号测斜管'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='3号侧斜管'", update_cmd);
                                 }
                                 catch { }
 
@@ -647,16 +667,18 @@ namespace baguang_new
                                 try
                                 {
                                     string[] insert_cmd = new string[3];
-                                    insert_cmd[0] = "4号测斜管";
+                                    insert_cmd[0] = "4号侧斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                  ///  if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='4号测斜管'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='4号侧斜管'", update_cmd);
                                 }
                                 catch { }
 
@@ -690,13 +712,15 @@ namespace baguang_new
                                     insert_cmd[0] = "1号坡道状态";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                   // if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
                                
-                                        string[] update_cmd = new string[2];
-                                        update_cmd[0] = "status='" + level.level_name + "'";
-                                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                        Global.builder.Updata("baguangdata", "podaoname='1号坡道状态'", update_cmd);
+                                        //string[] update_cmd = new string[2];
+                                        //update_cmd[0] = "status='" + level.level_name + "'";
+                                        //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                        //if (count == 1000)
+                                        //Global.builder.Updata("baguangdata", "podaoname='1号坡道状态'", update_cmd);
                                   }
                                     catch { }
                                 
@@ -711,14 +735,16 @@ namespace baguang_new
                                     insert_cmd[0] = "2号坡道状态";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                   // if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
                                 
                                
-                                        string[] update_cmd = new string[2];
-                                        update_cmd[0] = "status='" + level.level_name + "'";
-                                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                        Global.builder.Updata("baguangdata", "podaoname='2号坡道状态'", update_cmd);
+                                        //string[] update_cmd = new string[2];
+                                        //update_cmd[0] = "status='" + level.level_name + "'";
+                                        //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                        //if (count == 1000)
+                                        //Global.builder.Updata("baguangdata", "podaoname='2号坡道状态'", update_cmd);
                                     }
                                     catch { }
                                 
@@ -733,12 +759,14 @@ namespace baguang_new
                                     insert_cmd[0] = "3号坡道状态";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                 //   if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='3号坡道状态'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='3号坡道状态'", update_cmd);
                                 }
                                 catch { }
                                 
@@ -753,13 +781,15 @@ namespace baguang_new
                                     insert_cmd[0] = "1号测斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                  //  if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
                                
-                                        string[] update_cmd = new string[2];
-                                        update_cmd[0] = "status='" + level.level_name + "'";
-                                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                        Global.builder.Updata("baguangdata", "podaoname='1号测斜管'", update_cmd);
+                                        //string[] update_cmd = new string[2];
+                                        //update_cmd[0] = "status='" + level.level_name + "'";
+                                        //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                        //if (count == 1000)
+                                        //Global.builder.Updata("baguangdata", "podaoname='1号测斜管'", update_cmd);
                                     }
                                     catch { }
                                 
@@ -772,12 +802,14 @@ namespace baguang_new
                                     insert_cmd[0] = "2号测斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                   // if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
-                                        string[] update_cmd = new string[2];
-                                        update_cmd[0] = "status='" + level.level_name + "'";
-                                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                        Global.builder.Updata("baguangdata", "podaoname='2号测斜管'", update_cmd);
+                                        //string[] update_cmd = new string[2];
+                                        //update_cmd[0] = "status='" + level.level_name + "'";
+                                        //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                        //if (count == 1000)
+                                        //Global.builder.Updata("baguangdata", "podaoname='2号测斜管'", update_cmd);
                                     }
                                     catch { }
                                 
@@ -790,13 +822,15 @@ namespace baguang_new
                                     insert_cmd[0] = "3号测斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                  //  if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
                                
-                                        string[] update_cmd = new string[2];
-                                        update_cmd[0] = "status='" + level.level_name + "'";
-                                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                        Global.builder.Updata("baguangdata", "podaoname='3号测斜管'", update_cmd);
+                                        //string[] update_cmd = new string[2];
+                                        //update_cmd[0] = "status='" + level.level_name + "'";
+                                        //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                        //if (count == 1000)
+                                        //Global.builder.Updata("baguangdata", "podaoname='3号测斜管'", update_cmd);
                                     }
                                     catch { }
                                 
@@ -809,13 +843,15 @@ namespace baguang_new
                                     insert_cmd[0] = "4号测斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                 //   if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
                               
-                                        string[] update_cmd = new string[2];
-                                        update_cmd[0] = "status='" + level.level_name + "'";
-                                        update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                        Global.builder.Updata("baguangdata", "podaoname='4号测斜管'", update_cmd);
+                                        //string[] update_cmd = new string[2];
+                                        //update_cmd[0] = "status='" + level.level_name + "'";
+                                        //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                        //if (count == 1000)
+                                        //Global.builder.Updata("baguangdata", "podaoname='4号测斜管'", update_cmd);
                                     }
                                     catch { }
                                 
@@ -847,13 +883,15 @@ namespace baguang_new
                                     insert_cmd[0] = "1号坡道状态";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                   // if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='1号坡道状态'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='1号坡道状态'", update_cmd);
                                 }
                                 catch { }
 
@@ -867,15 +905,17 @@ namespace baguang_new
                                     string[] insert_cmd = new string[3];
                                     insert_cmd[0] = "2号坡道状态";
                                     insert_cmd[1] = level.level_name;
-                                    insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                    insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"); 
+                                  //  if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='2号坡道状态'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='2号坡道状态'", update_cmd);
                                 }
                                 catch { }
 
@@ -890,12 +930,14 @@ namespace baguang_new
                                     insert_cmd[0] = "3号坡道状态";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                               //     if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='3号坡道状态'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='3号坡道状态'", update_cmd);
                                 }
                                 catch { }
 
@@ -910,13 +952,15 @@ namespace baguang_new
                                     insert_cmd[0] = "1号测斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                 //   if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='1号测斜管'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='1号测斜管'", update_cmd);
                                 }
                                 catch { }
 
@@ -929,12 +973,14 @@ namespace baguang_new
                                     insert_cmd[0] = "2号测斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                //    if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='2号测斜管'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='2号测斜管'", update_cmd);
                                 }
                                 catch { }
 
@@ -947,13 +993,15 @@ namespace baguang_new
                                     insert_cmd[0] = "3号测斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                              //      if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='3号测斜管'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='3号测斜管'", update_cmd);
                                 }
                                 catch { }
 
@@ -966,13 +1014,15 @@ namespace baguang_new
                                     insert_cmd[0] = "4号测斜管";
                                     insert_cmd[1] = level.level_name;
                                     insert_cmd[2] = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                                 //   if (count == 1000)
                                     Global.builder.Insert("baguangdata", insert_cmd);
 
 
-                                    string[] update_cmd = new string[2];
-                                    update_cmd[0] = "status='" + level.level_name + "'";
-                                    update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
-                                    Global.builder.Updata("baguangdata", "podaoname='4号测斜管'", update_cmd);
+                                    //string[] update_cmd = new string[2];
+                                    //update_cmd[0] = "status='" + level.level_name + "'";
+                                    //update_cmd[1] = "datetime='" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "'";
+                                    //if (count == 1000)
+                                    //Global.builder.Updata("baguangdata", "podaoname='4号测斜管'", update_cmd);
                                 }
                                 catch { }
 

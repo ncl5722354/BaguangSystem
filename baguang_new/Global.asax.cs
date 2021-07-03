@@ -28,7 +28,7 @@ namespace baguang_new
 
                 CreateSqlValueType[] create_type = new CreateSqlValueType[3];
 
-                create_type[0] = new CreateSqlValueType("nvarchar(50)", "podaoname", true, true);
+                create_type[0] = new CreateSqlValueType("nvarchar(50)", "podaoname");
 
                 create_type[1] = new CreateSqlValueType("nvarchar(50)", "status");
 

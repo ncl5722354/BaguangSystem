@@ -165,3 +165,12 @@ D:\warningsystem\Tools\obj\Debug\Tools.ToolsView.resources
 D:\warningsystem\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
 D:\warningsystem\Tools\obj\Debug\Tools.dll
 D:\warningsystem\Tools\obj\Debug\Tools.pdb
+E:\程序\坝光后台\BaguangSystem\Tools\bin\Debug\Tools.dll
+E:\程序\坝光后台\BaguangSystem\Tools\bin\Debug\Tools.pdb
+E:\程序\坝光后台\BaguangSystem\Tools\bin\Debug\FileOperation.dll
+E:\程序\坝光后台\BaguangSystem\Tools\bin\Debug\FileOperation.pdb
+E:\程序\坝光后台\BaguangSystem\Tools\obj\Debug\Tools.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\Tools\obj\Debug\Tools.ToolsView.resources
+E:\程序\坝光后台\BaguangSystem\Tools\obj\Debug\Tools.csproj.GenerateResource.Cache
+E:\程序\坝光后台\BaguangSystem\Tools\obj\Debug\Tools.dll
+E:\程序\坝光后台\BaguangSystem\Tools\obj\Debug\Tools.pdb

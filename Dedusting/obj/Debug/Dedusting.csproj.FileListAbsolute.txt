@@ -152,3 +152,16 @@ D:\warningsystem\Dedusting\obj\Debug\Dedusting.控件.Title.resources
 D:\warningsystem\Dedusting\obj\Debug\Dedusting.csproj.GenerateResource.Cache
 D:\warningsystem\Dedusting\obj\Debug\Dedusting.exe
 D:\warningsystem\Dedusting\obj\Debug\Dedusting.pdb
+E:\程序\坝光后台\BaguangSystem\Dedusting\bin\Debug\Dedusting.exe.config
+E:\程序\坝光后台\BaguangSystem\Dedusting\bin\Debug\Dedusting.exe
+E:\程序\坝光后台\BaguangSystem\Dedusting\bin\Debug\Dedusting.pdb
+E:\程序\坝光后台\BaguangSystem\Dedusting\bin\Debug\ViewConfig.dll
+E:\程序\坝光后台\BaguangSystem\Dedusting\bin\Debug\ViewConfig.pdb
+E:\程序\坝光后台\BaguangSystem\Dedusting\obj\Debug\Dedusting.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\Dedusting\obj\Debug\Dedusting.Form1.resources
+E:\程序\坝光后台\BaguangSystem\Dedusting\obj\Debug\Dedusting.Properties.Resources.resources
+E:\程序\坝光后台\BaguangSystem\Dedusting\obj\Debug\Dedusting.控件.ExitButton.resources
+E:\程序\坝光后台\BaguangSystem\Dedusting\obj\Debug\Dedusting.控件.Title.resources
+E:\程序\坝光后台\BaguangSystem\Dedusting\obj\Debug\Dedusting.csproj.GenerateResource.Cache
+E:\程序\坝光后台\BaguangSystem\Dedusting\obj\Debug\Dedusting.exe
+E:\程序\坝光后台\BaguangSystem\Dedusting\obj\Debug\Dedusting.pdb

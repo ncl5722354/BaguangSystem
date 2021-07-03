@@ -82,13 +82,7 @@
     var button_ok = document.getElementById("button_ok");
 
     button_ok.onclick = function (event) {
-        if (username.value == "admin" && password.value == "admin") {
-
-            setCookie("user", "admin", 7);
-            window.open("MainView.aspx", "", "", true);
-            window.close();
-            return;
-        }
+        
 
         $.ajax({
             url: "/mywebserver.asmx/user_limit",
@@ -97,7 +91,7 @@
             contentType: "application/json; charset=utf-8",
             data: "{username:'" + username.value.toString() + "',password:'"+password.value.toString()+"'}",
             success: function (data) {
-                // 得到的结果是data
+                 //得到的结果是data
                 //alert($.parseJSON(data) );
                 if (data == "{\"d\":\"user\"}")
                 {

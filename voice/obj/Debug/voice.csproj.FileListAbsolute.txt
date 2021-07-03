@@ -109,3 +109,10 @@ D:\warningsystem\voice\obj\Debug\voice.voiceControls.resources
 D:\warningsystem\voice\obj\Debug\voice.csproj.GenerateResource.Cache
 D:\warningsystem\voice\obj\Debug\voice.dll
 D:\warningsystem\voice\obj\Debug\voice.pdb
+E:\程序\坝光后台\BaguangSystem\voice\bin\Debug\voice.dll
+E:\程序\坝光后台\BaguangSystem\voice\bin\Debug\voice.pdb
+E:\程序\坝光后台\BaguangSystem\voice\obj\Debug\voice.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\voice\obj\Debug\voice.voiceControls.resources
+E:\程序\坝光后台\BaguangSystem\voice\obj\Debug\voice.csproj.GenerateResource.Cache
+E:\程序\坝光后台\BaguangSystem\voice\obj\Debug\voice.dll
+E:\程序\坝光后台\BaguangSystem\voice\obj\Debug\voice.pdb

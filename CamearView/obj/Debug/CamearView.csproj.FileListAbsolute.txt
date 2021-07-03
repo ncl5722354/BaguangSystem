@@ -130,3 +130,11 @@ D:\warningsystem\CamearView\obj\Debug\CamearView.Properties.Resources.resources
 D:\warningsystem\CamearView\obj\Debug\CamearView.csproj.GenerateResource.Cache
 D:\warningsystem\CamearView\obj\Debug\CamearView.exe
 D:\warningsystem\CamearView\obj\Debug\CamearView.pdb
+E:\程序\坝光后台\BaguangSystem\CamearView\bin\Debug\CamearView.exe.config
+E:\程序\坝光后台\BaguangSystem\CamearView\bin\Debug\CamearView.exe
+E:\程序\坝光后台\BaguangSystem\CamearView\bin\Debug\CamearView.pdb
+E:\程序\坝光后台\BaguangSystem\CamearView\obj\Debug\CamearView.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\CamearView\obj\Debug\CamearView.Properties.Resources.resources
+E:\程序\坝光后台\BaguangSystem\CamearView\obj\Debug\CamearView.csproj.GenerateResource.Cache
+E:\程序\坝光后台\BaguangSystem\CamearView\obj\Debug\CamearView.exe
+E:\程序\坝光后台\BaguangSystem\CamearView\obj\Debug\CamearView.pdb

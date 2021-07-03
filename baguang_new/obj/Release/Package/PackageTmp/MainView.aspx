@@ -449,7 +449,7 @@
         </asp:UpdatePanel>
 
         <iframe
-          src="https://open.ys7.com/ezopen/h5/iframe?url=ezopen://open.ys7.com/F54508596/1.live&autoplay=1&accessToken=at.2lsxt9dfdhq719it5onvjg3r6f53y0ck-4jmoj1ddff-0gdn928-nw1jeste5"
+          src="https://open.ys7.com/ezopen/h5/iframe?url=ezopen://open.ys7.com/F54508596/1.live&autoplay=1&accessToken=at.curpvir78s1jcjn907cs9ykn2qy1ec04-968ca73rng-1sv8n3n-yitr34i9y"
   width="600"
   height="400"
   id="ysOpenDevice"
@@ -549,8 +549,8 @@
         audio.play();
     }
 
-
-    var int1 = self.setInterval("clock1()", 6000);
+    clock1();
+    var int1 = self.setInterval("clock1()", 60000);
 
     var index = 0;
 
@@ -618,19 +618,21 @@
                 //for (var i = 0; i < json_object.length; i++) {
                 //    pos_Array.push(json_object[i]);
                 //}
+                try{
+                    var sub_string = data.substr(5, data.length - 6);
+                    json_object = JSON.parse(sub_string);
 
-                var sub_string = data.substr(5, data.length - 6);
-                json_object = JSON.parse(sub_string);
 
+                    label_qushi(label1, json_object[0].posname, json_object[0].qushi);
+                    label_qushi(label2, json_object[1].posname, json_object[1].qushi);
+                    label_qushi(label3, json_object[2].posname, json_object[2].qushi);
+                    label_qushi(label4, json_object[3].posname, json_object[3].qushi);
+                    label_qushi(label5, json_object[4].posname, json_object[4].qushi);
+                    label_qushi(label6, json_object[5].posname, json_object[5].qushi);
 
-                label_qushi(label1, json_object[0].posname, json_object[0].qushi);
-                label_qushi(label2, json_object[1].posname, json_object[1].qushi);
-                label_qushi(label3, json_object[2].posname, json_object[2].qushi);
-                label_qushi(label4, json_object[3].posname, json_object[3].qushi);
-                label_qushi(label5, json_object[4].posname, json_object[4].qushi);
-                label_qushi(label6, json_object[5].posname, json_object[5].qushi);
-
-                label_qushi(label7, json_object[6].posname, json_object[6].qushi);
+                    label_qushi(label7, json_object[6].posname, json_object[6].qushi);
+                }
+                catch(err){}
                 //label1.textContent = json_object[0].poname + " 日变化:" + json_object[0].qushi;
                 //label2.textContent = json_object[1].poname + " 日变化:" + json_object[1].qushi;
                 //label3.textContent = json_object[2].poname + " 日变化:" + json_object[2].qushi;

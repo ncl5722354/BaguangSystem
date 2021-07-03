@@ -48,3 +48,16 @@ D:\nichenglong\huizhou1\huizhou_newsystem\huizhou\huizhou\bin\String_Caozuo.pdb
 D:\nichenglong\huizhou1\huizhou_newsystem\huizhou\huizhou\obj\Debug\huizhou.csprojResolveAssemblyReference.cache
 D:\nichenglong\huizhou1\huizhou_newsystem\huizhou\huizhou\obj\Debug\huizhou.dll
 D:\nichenglong\huizhou1\huizhou_newsystem\huizhou\huizhou\obj\Debug\huizhou.pdb
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\Build\UnityLoader.js
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\image\huizhou.FBX
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\Build\web.json
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\huizhou.dll.config
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\huizhou.dll
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\huizhou.pdb
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\Communication.dll
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\String_Caozuo.dll
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\Communication.pdb
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\bin\String_Caozuo.pdb
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\obj\Debug\huizhou.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\obj\Debug\huizhou.dll
+E:\程序\坝光后台\BaguangSystem\huizhou\huizhou\obj\Debug\huizhou.pdb

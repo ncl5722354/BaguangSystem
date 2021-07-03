@@ -362,3 +362,6 @@ D:\warningsystem\Shuini\obj\Debug\Shuini.SubView.resources
 D:\warningsystem\Shuini\obj\Debug\Shuini.csproj.GenerateResource.Cache
 D:\warningsystem\Shuini\obj\Debug\Shuini.exe
 D:\warningsystem\Shuini\obj\Debug\Shuini.pdb
+E:\程序\坝光后台\BaguangSystem\Shuini\obj\Debug\Shuini.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\Shuini\obj\Debug\Shuini.exe
+E:\程序\坝光后台\BaguangSystem\Shuini\obj\Debug\Shuini.pdb

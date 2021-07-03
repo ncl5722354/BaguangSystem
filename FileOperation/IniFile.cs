@@ -61,10 +61,10 @@ namespace FileOperation
         /// <param name="key">键</param>
         /// <returns>返回的键值</returns>
         public string IniReadValue(string section, string key) 
-        { 
-            StringBuilder temp = new StringBuilder(255); 
+        {
+            StringBuilder temp = new StringBuilder(255);
 
-            int i = GetPrivateProfileString(section, key, "", temp, 255, this.Path); 
+            int i = GetPrivateProfileString(section, key, "", temp, 255, this.Path);
             return temp.ToString();
         }
 

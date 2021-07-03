@@ -9,3 +9,14 @@ D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.Pr
 D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.csproj.GenerateResource.Cache
 D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.exe
 D:\程序\深圳项目\WarningSystem-master\YinRanSmart\obj\Debug\YinRanSmart.pdb
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\bin\Debug\YinRanSmart.exe.config
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\bin\Debug\YinRanSmart.exe
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\bin\Debug\YinRanSmart.pdb
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\bin\Debug\ViewConfig.dll
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\bin\Debug\ViewConfig.pdb
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\obj\Debug\YinRanSmart.csprojResolveAssemblyReference.cache
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\obj\Debug\YinRanSmart.Form1.resources
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\obj\Debug\YinRanSmart.Properties.Resources.resources
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\obj\Debug\YinRanSmart.csproj.GenerateResource.Cache
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\obj\Debug\YinRanSmart.exe
+E:\程序\坝光后台\BaguangSystem\YinRanSmart\obj\Debug\YinRanSmart.pdb
